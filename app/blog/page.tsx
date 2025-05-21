@@ -83,7 +83,7 @@ export default function BlogPage() {
                 {posts.map((post) => (
                     <article
                         key={post.id}
-                        className="bg-gray-bg rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow"
+                        className="bg-gray-bg rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-all"
                     >
                       <div className="relative h-48 w-full">
                         <Image

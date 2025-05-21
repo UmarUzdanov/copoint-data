@@ -94,7 +94,7 @@ export default function ServicesPage() {
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               {/* Data Management */}
-              <div className="bg-gray-bg p-8 rounded-lg transition-all hover:shadow-md">
+              <div className="bg-gray-bg p-8 rounded-lg transition-all hover:shadow-lg hover:translate-y-[-5px]">
                 <div className="bg-carolina-blue/20 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-6">
                   <Database className="h-8 w-8 text-basin-slate" />
                 </div>
@@ -126,7 +126,7 @@ export default function ServicesPage() {
               </div>
 
               {/* AI Solutions */}
-              <div className="bg-gray-bg p-8 rounded-lg transition-all hover:shadow-md">
+              <div className="bg-gray-bg p-8 rounded-lg transition-all hover:shadow-lg hover:translate-y-[-5px]">
                 <div className="bg-carolina-blue/20 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-6">
                   <Brain className="h-8 w-8 text-basin-slate" />
                 </div>
@@ -158,7 +158,7 @@ export default function ServicesPage() {
               </div>
 
               {/* Business Intelligence */}
-              <div className="bg-gray-bg p-8 rounded-lg transition-all hover:shadow-md">
+              <div className="bg-gray-bg p-8 rounded-lg transition-all hover:shadow-lg hover:translate-y-[-5px]">
                 <div className="bg-carolina-blue/20 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-6">
                   <BarChart3 className="h-8 w-8 text-basin-slate" />
                 </div>
@@ -190,7 +190,7 @@ export default function ServicesPage() {
               </div>
 
               {/* Cloud Solutions */}
-              <div className="bg-gray-bg p-8 rounded-lg transition-all hover:shadow-md">
+              <div className="bg-gray-bg p-8 rounded-lg transition-all hover:shadow-lg hover:translate-y-[-5px]">
                 <div className="bg-carolina-blue/20 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-6">
                   <Cloud className="h-8 w-8 text-basin-slate" />
                 </div>
@@ -222,7 +222,7 @@ export default function ServicesPage() {
               </div>
 
               {/* Data Strategy */}
-              <div className="bg-gray-bg p-8 rounded-lg transition-all hover:shadow-md">
+              <div className="bg-gray-bg p-8 rounded-lg transition-all hover:shadow-lg hover:translate-y-[-5px]">
                 <div className="bg-carolina-blue/20 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-6">
                   <FileText className="h-8 w-8 text-basin-slate" />
                 </div>
@@ -254,7 +254,7 @@ export default function ServicesPage() {
               </div>
 
               {/* AI Productivity Sprint */}
-              <div className="bg-gray-bg p-8 rounded-lg transition-all hover:shadow-md">
+              <div className="bg-gray-bg p-8 rounded-lg transition-all hover:shadow-lg hover:translate-y-[-5px]">
                 <div className="bg-carolina-blue/20 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-6">
                   <svg
                     width="32"
@@ -527,7 +527,7 @@ export default function ServicesPage() {
 
             <div className="grid md:grid-cols-4 gap-6">
               <div className="relative">
-                <div className="bg-carolina-blue text-navy p-6 rounded-lg h-full">
+                <div className="bg-carolina-blue text-navy p-6 rounded-lg h-full transition-all hover:shadow-lg">
                   <div className="flex justify-center mb-3">
                     <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path
@@ -550,7 +550,7 @@ export default function ServicesPage() {
               </div>
 
               <div className="relative">
-                <div className="bg-carolina-blue text-navy p-6 rounded-lg h-full">
+                <div className="bg-carolina-blue text-navy p-6 rounded-lg h-full transition-all hover:shadow-lg">
                   <div className="flex justify-center mb-3">
                     <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path
@@ -580,7 +580,7 @@ export default function ServicesPage() {
               </div>
 
               <div className="relative">
-                <div className="bg-carolina-blue text-navy p-6 rounded-lg h-full">
+                <div className="bg-carolina-blue text-navy p-6 rounded-lg h-full transition-all hover:shadow-lg">
                   <div className="flex justify-center mb-3">
                     <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path
@@ -611,7 +611,7 @@ export default function ServicesPage() {
               </div>
 
               <div>
-                <div className="bg-carolina-blue text-navy p-6 rounded-lg h-full">
+                <div className="bg-carolina-blue text-navy p-6 rounded-lg h-full transition-all hover:shadow-lg">
                   <div className="flex justify-center mb-3">
                     <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path

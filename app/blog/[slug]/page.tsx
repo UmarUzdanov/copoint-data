@@ -148,7 +148,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
                   {relatedPosts.map((relatedPost) => (
                     <article
                       key={relatedPost.id}
-                      className="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow"
+                      className="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-all"
                     >
                       <div className="relative h-48 w-full">
                         <Image

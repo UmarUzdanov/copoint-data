@@ -92,15 +92,15 @@ export default function AboutPage() {
               </p>
               
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-                <div className="p-6 bg-gray-bg rounded-lg">
+                <div className="p-6 bg-gray-bg rounded-lg transition-all hover:shadow-lg hover:translate-y-[-5px]">
                   <div className="text-4xl font-bold text-carolina-blue mb-2">20+</div>
                   <p className="text-navy">Years of Combined Experience</p>
                 </div>
-                <div className="p-6 bg-gray-bg rounded-lg">
+                <div className="p-6 bg-gray-bg rounded-lg transition-all hover:shadow-lg hover:translate-y-[-5px]">
                   <div className="text-4xl font-bold text-carolina-blue mb-2">100+</div>
                   <p className="text-navy">Successful Projects</p>
                 </div>
-                <div className="p-6 bg-gray-bg rounded-lg">
+                <div className="p-6 bg-gray-bg rounded-lg transition-all hover:shadow-lg hover:translate-y-[-5px]">
                   <div className="text-4xl font-bold text-carolina-blue mb-2">50+</div>
                   <p className="text-navy">Enterprise Clients</p>
                 </div>
@@ -116,7 +116,7 @@ export default function AboutPage() {
             
             <div className="grid md:grid-cols-2 gap-12">
               {teamMembers.map((member, index) => (
-                <div key={index} className="bg-white rounded-lg overflow-hidden shadow-md">
+                <div key={index} className="bg-white rounded-lg overflow-hidden shadow-md transition-all hover:shadow-lg">
                   <div className="p-8">
                     <div className="flex flex-col md:flex-row gap-6 items-start md:items-center mb-6">
                       <div className="relative h-32 w-32 rounded-full overflow-hidden flex-shrink-0">
@@ -191,7 +191,7 @@ export default function AboutPage() {
               <h2 className="text-3xl md:text-4xl font-light mb-12 text-navy">Our Values</h2>
               
               <div className="grid md:grid-cols-3 gap-8">
-                <div className="p-6">
+                <div className="p-6 transition-all hover:translate-y-[-5px]">
                   <div className="bg-carolina-blue h-16 w-16 rounded-full flex items-center justify-center mx-auto mb-4">
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
@@ -200,7 +200,7 @@ export default function AboutPage() {
                   <h3 className="text-xl font-semibold mb-3 text-basin-slate">Excellence</h3>
                   <p className="text-black">We are committed to delivering the highest quality solutions and exceeding client expectations in everything we do.</p>
                 </div>
-                <div className="p-6">
+                <div className="p-6 transition-all hover:translate-y-[-5px]">
                   <div className="bg-carolina-blue h-16 w-16 rounded-full flex items-center justify-center mx-auto mb-4">
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
@@ -209,7 +209,7 @@ export default function AboutPage() {
                   <h3 className="text-xl font-semibold mb-3 text-basin-slate">Innovation</h3>
                   <p className="text-black">We continuously explore new technologies and methodologies to provide cutting-edge solutions for complex data challenges.</p>
                 </div>
-                <div className="p-6">
+                <div className="p-6 transition-all hover:translate-y-[-5px]">
                   <div className="bg-carolina-blue h-16 w-16 rounded-full flex items-center justify-center mx-auto mb-4">
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
