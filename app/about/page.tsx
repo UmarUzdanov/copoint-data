@@ -1,7 +1,7 @@
 import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
-import { LinkedIn } from "lucide-react"
+import { Linkedin } from "lucide-react"
 
 type TeamMember = {
   name: string
@@ -218,12 +218,12 @@ export default function AboutPage() {
                         <p className="text-lg text-carolina-blue mb-2">{member.role}</p>
                         {member.linkedin && (
                           <a 
-                            href={member.}
+                            href={member.linkedin}
                             target="_blank" 
                             rel="noopener noreferrer"
                             className="inline-flex items-center text-navy hover:text-carolina-blue"
                           >
-                            < className="h-5 w-5 mr-1" />
+                            <Linkedin className="h-5 w-5 mr-1" />
                             <span>LinkedIn</span>
                           </a>
                         )}
