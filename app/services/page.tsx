@@ -654,8 +654,14 @@ export default function ServicesPage() {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-4 gap-8">
             <div>
-              <div className="text-xl font-bold mb-4">
-                <span className="text-carolina-blue">CoPoint</span> Data
+              <div className="mb-4">
+                <Image
+                  src="/CoPoint.svg"
+                  alt="CoPoint Data Logo"
+                  width={120}
+                  height={40}
+                  priority
+                />
               </div>
               <p className="text-black mb-4">All Data, All Microsoft, All of the Time</p>
               <div className="flex space-x-4">
