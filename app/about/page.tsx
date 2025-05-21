@@ -168,13 +168,13 @@ export default function AboutPage() {
             <div className="max-w-4xl mx-auto">
               <h2 className="text-3xl md:text-4xl font-light mb-8 text-navy text-center">About CoPoint Data</h2>
               <p className="text-lg mb-6 text-black">
-                CoPoint Data is a premier data consulting firm specializing in Microsoft's data ecosystem. We help organizations unlock the full potential of their data through sophisticated analytics, AI solutions, and strategic data management.
+                CoPoint Data is a premier data consulting firm specializing in Microsofts data ecosystem. We help organizations unlock the full potential of their data through sophisticated analytics, AI solutions, and strategic data management.
               </p>
               <p className="text-lg mb-6 text-black">
                 Founded by industry veterans with decades of experience, our team brings together expertise in data science, business intelligence, cloud solutions, and AI to deliver transformative results for our clients.
               </p>
               <p className="text-lg mb-10 text-black">
-                Our mission is simple: All Data, All Microsoft, All of the Time. We believe in the power of data to drive business growth, operational efficiency, and innovation. Through our comprehensive approach to data strategy and implementation, we help organizations navigate the complexities of today's data landscape and emerge as leaders in their industries.
+                Our mission is simple: All Data, All Microsoft, All of the Time. We believe in the power of data to drive business growth, operational efficiency, and innovation. Through our comprehensive approach to data strategy and implementation, we help organizations navigate the complexities of todays data landscape and emerge as leaders in their industries.
               </p>
               
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
@@ -287,7 +287,7 @@ export default function AboutPage() {
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-3xl md:text-4xl font-light mb-4 text-navy">Ready to transform your data strategy?</h2>
             <p className="text-black mb-8 max-w-2xl mx-auto">
-              Let's discuss how CoPoint Data can help you leverage the full power of Microsoft's data ecosystem.
+              Let's discuss how CoPoint Data can help you leverage the full power of Microsofts data ecosystem.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button className="bg-white text-navy hover:bg-white/90">Contact Us</Button>
