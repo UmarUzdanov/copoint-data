@@ -70,7 +70,7 @@ export default function ServicesPage() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button className="bg-carolina-blue text-navy hover:bg-carolina-blue/90">Contact Us</Button>
-                <Button variant="outline" className="text-navy border-white bg-white hover:bg-white/90">
+                <Button variant="outline" className="text-white border-carolina-blue bg-transparent hover:bg-carolina-blue/20">
                   View Case Studies
                 </Button>
               </div>
