@@ -21,19 +21,19 @@ export const authors: Record<string, Author> = {
     name: "Dipesh Patel",
     role: "President and COO",
     email: "dipesh@copointdata.com",
-    image: "/placeholder.svg?height=400&width=400",
+    image: "/team/CURRENT_Patel_Dipesh_Big_Ben.jpg",
   },
   "john-humphrey": {
     name: "John P Humphrey Jr.",
     role: "Co-Founder and CEO",
     email: "john@copointdata.com",
-    image: "/placeholder.svg?height=400&width=400",
+    image: "/team/John.jpeg",
   },
   saurabh: {
     name: "Saurabh Singh Teotia",
     role: "Associate Director",
     email: "saurabh@copointdata.com",
-    image: "/placeholder.svg?height=400&width=400",
+    image: "/team/Saurabh Photo.jpg",
   },
 }
 
@@ -55,7 +55,7 @@ Implementation is not so simple. First, you have to get the 5 cents from somewhe
 What are your thoughts about the data conversation these days? Should you go out and get all the data you can and then figure out what you are going to do with it at a later date?`,
     date: "04.01.2025",
     author: authors["dipesh-patel"],
-    image: "/placeholder.svg?height=600&width=1200",
+    image: "/blog/data-strategy.png",
   },
   {
     id: "2",
@@ -83,7 +83,7 @@ Do you have any additional thoughts on data strategies? We would love to hear fr
 Reach out if you would like to discuss the complete list of data strategy best practices for your organization.`,
     date: "04.08.2025",
     author: authors["dipesh-patel"],
-    image: "/placeholder.svg?height=600&width=1200",
+    image: "/blog/data-strategy.png",
   },
   {
     id: "3",
@@ -106,7 +106,7 @@ In 2025, focus on analytics, data, and customer-centric strategies to achieve su
 Connect with us at CoPoint Data!`,
     date: "04.15.2025",
     author: authors["john-humphrey"],
-    image: "/placeholder.svg?height=600&width=1200",
+    image: "/blog/microsoft-tech.png",
   },
   {
     id: "4",
@@ -137,7 +137,7 @@ At CoPoint Data, we tackle these challenges daily, treating your investments as 
 Visit us at www.copointdata.com to explore how we can elevate your business through AI and strategic data management.`,
     date: "04.22.2025",
     author: authors["john-humphrey"],
-    image: "/placeholder.svg?height=600&width=1200",
+    image: "/blog/screen.png",
   },
   {
     id: "5",
@@ -158,7 +158,7 @@ Securing early successes in these areas not only provides your team with confide
 Best wishes on your AI journey!`,
     date: "04.29.2025",
     author: authors["john-humphrey"],
-    image: "/placeholder.svg?height=600&width=1200",
+    image: "/blog/ai-productivity.png",
   },
   {
     id: "6",
@@ -183,7 +183,7 @@ Best wishes on your AI journey!`,
 Reach out if you would like to discuss building a data platform for your organization.`,
     date: "05.06.2025",
     author: authors["dipesh-patel"],
-    image: "/placeholder.svg?height=600&width=1200",
+    image: "/blog/data-strategy.png",
   },
   {
     id: "7",
@@ -202,7 +202,7 @@ Without a comprehensive data strategy, training AI models on incomplete datasets
 For organizations seeking guidance on navigating the AI landscape and harnessing the power of data, CoPoint Data offers strategic solutions and roadmaps tailored to drive success.`,
     date: "05.13.2025",
     author: authors["john-humphrey"],
-    image: "/placeholder.svg?height=600&width=1200",
+    image: "/blog/microsoft-tech.png",
   },
   {
     id: "8",
@@ -233,7 +233,7 @@ For organizations seeking guidance on navigating the AI landscape and harnessing
 What's your take? Which Microsoft AI capabilities are you most excited about?`,
     date: "05.20.2025",
     author: authors["john-humphrey"],
-    image: "/placeholder.svg?height=600&width=1200",
+    image: "/blog/screen.png",
   },
   {
     id: "9",
@@ -266,7 +266,7 @@ To truly harness AI's potential, businesses need a reliable platform that simpli
 Let's move beyond the buzzwords and focus on real solutions. With Azure, your business can turn AI dreams into reality, driving growth, efficiency, and innovation in the process.`,
     date: "05.28.2025",
     author: authors["saurabh"],
-    image: "/placeholder.svg?height=600&width=1200",
+    image: "/blog/ai-productivity.png",
   },
   {
     id: "10",
@@ -333,7 +333,7 @@ The real power of Azure lies in its ability to democratize AI - making enterpris
 What's your experience with Azure's AI capabilities? Have you implemented any AI solutions using Azure? Let's discuss in the comments below!`,
     date: "06.03.2025",
     author: authors["saurabh"],
-    image: "/placeholder.svg?height=600&width=1200",
+    image: "/blog/group.png",
   },
 ]
 
