@@ -1,11 +1,20 @@
 import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
-import { Linkedin } from "lucide-react"
 import { getTeamMembers } from "@/lib/team"
+import { Linkedin, ArrowLeft } from "lucide-react"
+import { notFound } from "next/navigation"
 
-export default function AboutPage() {
+export default function TeamMemberPage({ params }: { params: { slug: string } }) {
   const teamMembers = getTeamMembers()
+  const member = teamMembers.find(
+    (m) => m.name.toLowerCase().replace(/\s+/g, '-') === params.slug
+  )
+
+  if (!member) {
+    notFound()
+  }
+
   return (
     <div className="flex flex-col min-h-screen">
       {/* Navigation */}
@@ -60,163 +69,57 @@ export default function AboutPage() {
           </Button>
         </div>
       </header>
+
       <main className="flex-1">
         {/* Hero Section */}
         <section className="bg-navy py-16 md:py-24">
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto text-center">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold mb-6 text-white">Our Team</h1>
-              <p className="text-white text-lg mb-8">
-                Meet the experts behind CoPoint Datas innovative solutions and transformative data strategies
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button className="bg-carolina-blue text-navy hover:bg-carolina-blue/90">Join Our Team</Button>
-              </div>
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold mb-6 text-white">{member.name}</h1>
+              <p className="text-white text-lg mb-8">{member.role}</p>
+              {member.linkedin && (
+                <a 
+                  href={member.linkedin}
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center text-white hover:text-carolina-blue"
+                >
+                  <Linkedin className="h-6 w-6 mr-2" />
+                  <span>Connect on LinkedIn</span>
+                </a>
+              )}
             </div>
           </div>
         </section>
 
-        {/* Company Overview */}
+        {/* Team Member Content */}
         <section className="py-16 bg-white">
           <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto">
-              <h2 className="text-3xl md:text-4xl font-light mb-8 text-navy text-center">About CoPoint Data</h2>
-              <p className="text-lg mb-6 text-black">
-                CoPoint Data is a premier data consulting firm specializing in Microsofts data ecosystem. We help organizations unlock the full potential of their data through sophisticated analytics, AI solutions, and strategic data management.
-              </p>
-              <p className="text-lg mb-6 text-black">
-                Founded by industry veterans with decades of experience, our team brings together expertise in data science, business intelligence, cloud solutions, and AI to deliver transformative results for our clients.
-              </p>
-              <p className="text-lg mb-10 text-black">
-                Our mission is simple: All Data, All Microsoft, All of the Time. We believe in the power of data to drive business growth, operational efficiency, and innovation. Through our comprehensive approach to data strategy and implementation, we help organizations navigate the complexities of todays data landscape and emerge as leaders in their industries.
-              </p>
-              
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-                <div className="p-6 bg-gray-bg rounded-lg">
-                  <div className="text-4xl font-bold text-carolina-blue mb-2">20+</div>
-                  <p className="text-navy">Years of Combined Experience</p>
-                </div>
-                <div className="p-6 bg-gray-bg rounded-lg">
-                  <div className="text-4xl font-bold text-carolina-blue mb-2">100+</div>
-                  <p className="text-navy">Successful Projects</p>
-                </div>
-                <div className="p-6 bg-gray-bg rounded-lg">
-                  <div className="text-4xl font-bold text-carolina-blue mb-2">50+</div>
-                  <p className="text-navy">Enterprise Clients</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+            <div className="max-w-3xl mx-auto">
+              <Link href="/about" className="inline-flex items-center text-basin-slate hover:text-carolina-blue mb-8">
+                <ArrowLeft className="h-4 w-4 mr-2" />
+                Back to Team
+              </Link>
 
-        {/* Leadership Team */}
-        <section className="py-16 bg-gray-bg">
-          <div className="container mx-auto px-4">
-            <h2 className="text-3xl md:text-4xl font-light mb-12 text-navy text-center">Our Leadership Team</h2>
-            
-            <div className="grid md:grid-cols-2 gap-12">
-              {teamMembers.map((member, index) => (
-                <div key={index} className="bg-white rounded-lg overflow-hidden shadow-md">
-                  <div className="p-8">
-                    <div className="flex flex-col md:flex-row gap-6 items-start md:items-center mb-6">
-                      <div className="relative h-32 w-32 rounded-full overflow-hidden flex-shrink-0">
-                        <Image
-                          src={member.image || "/placeholder.svg?height=400&width=400"}
-                          alt={member.name}
-                          fill
-                          className="object-cover"
-                        />
-                      </div>
-                      <div>
-                        <h3 className="text-2xl font-semibold text-basin-slate">
-                          <Link 
-                            href={`/team/${member.name.toLowerCase().replace(/\s+/g, '-')}`}
-                            className="hover:text-carolina-blue transition-colors"
-                          >
-                            {member.name}
-                          </Link>
-                        </h3>
-                        <p className="text-lg text-carolina-blue mb-2">{member.role}</p>
-                        {member.linkedin && (
-                          <a 
-                            href={member.linkedin}
-                            target="_blank" 
-                            rel="noopener noreferrer"
-                            className="inline-flex items-center text-navy hover:text-carolina-blue"
-                          >
-                            <Linkedin className="h-5 w-5 mr-1" />
-                            <span>LinkedIn</span>
-                          </a>
-                        )}
-                      </div>
-                    </div>
-                    <div className="prose max-w-none">
-                      {member.bio.split("\n\n").slice(0, 1).map((paragraph, idx) => (
-                        <p key={idx} className="mb-4 text-black">
-                          {paragraph.trim()}
-                        </p>
-                      ))}
-                      <Link 
-                        href={`/team/${member.name.toLowerCase().replace(/\s+/g, '-')}`}
-                        className="inline-flex items-center text-basin-slate hover:text-carolina-blue font-semibold"
-                      >
-                        Read Full Bio
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          className="h-4 w-4 ml-2"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M14 5l7 7m0 0l-7 7m7-7H3"
-                          />
-                        </svg>
-                      </Link>
-                    </div>
-                  </div>
+              <div className="flex flex-col md:flex-row gap-8 mb-12">
+                <div className="relative h-64 w-64 rounded-lg overflow-hidden flex-shrink-0 mx-auto md:mx-0">
+                  <Image
+                    src={member.image || "/placeholder.svg?height=400&width=400"}
+                    alt={member.name}
+                    fill
+                    className="object-cover"
+                  />
                 </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Values Section */}
-        <section className="py-16 bg-white">
-          <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto text-center">
-              <h2 className="text-3xl md:text-4xl font-light mb-12 text-navy">Our Values</h2>
-              
-              <div className="grid md:grid-cols-3 gap-8">
-                <div className="p-6">
-                  <div className="bg-carolina-blue h-16 w-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                    </svg>
+                <div>
+                  <h2 className="text-3xl font-semibold text-basin-slate mb-2">{member.name}</h2>
+                  <p className="text-xl text-carolina-blue mb-6">{member.role}</p>
+                  <div className="prose max-w-none">
+                    {member.bio.split("\n\n").map((paragraph, idx) => (
+                      <p key={idx} className="mb-4 text-black">
+                        {paragraph.trim()}
+                      </p>
+                    ))}
                   </div>
-                  <h3 className="text-xl font-semibold mb-3 text-basin-slate">Excellence</h3>
-                  <p className="text-black">We are committed to delivering the highest quality solutions and exceeding client expectations in everything we do.</p>
-                </div>
-                <div className="p-6">
-                  <div className="bg-carolina-blue h-16 w-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                    </svg>
-                  </div>
-                  <h3 className="text-xl font-semibold mb-3 text-basin-slate">Innovation</h3>
-                  <p className="text-black">We continuously explore new technologies and methodologies to provide cutting-edge solutions for complex data challenges.</p>
-                </div>
-                <div className="p-6">
-                  <div className="bg-carolina-blue h-16 w-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-                    </svg>
-                  </div>
-                  <h3 className="text-xl font-semibold mb-3 text-basin-slate">Collaboration</h3>
-                  <p className="text-black">We believe in the power of teamwork and partnership, working closely with our clients to achieve shared goals.</p>
                 </div>
               </div>
             </div>
@@ -228,7 +131,7 @@ export default function AboutPage() {
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-3xl md:text-4xl font-light mb-4 text-navy">Ready to transform your data strategy?</h2>
             <p className="text-black mb-8 max-w-2xl mx-auto">
-              Let's discuss how CoPoint Data can help you leverage the full power of Microsofts data ecosystem.
+              Let's discuss how CoPoint Data can help you leverage the full power of Microsoft's data ecosystem.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button className="bg-white text-navy hover:bg-white/90">Contact Us</Button>
