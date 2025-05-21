@@ -19,7 +19,7 @@ export const teamMembers: TeamMember[] = [
     Earlier in his career, John co-founded Pariveda Solutions Inc in 2003, growing the technology consulting firm to nearly 300 consultants across 10 U.S. offices in just ten years before selling his interest in 2013.
     
     Mr. Humphrey holds a B.A. in Economics and a B.B.A. in Finance from Southern Methodist University, as well as an M.B.A. from The Cox School of Business at SMU, where he currently serves on the Advisory Board. When not revolutionizing how businesses use data insights, John enjoys hunting in Arkansas, and walking the Katy Trail.`,
-    image: "/placeholder.svg?height=400&width=400",
+    image: "/team/John.jpeg",
     linkedin: "https://www.linkedin.com/in/jphumphrey/"
   },
   {
@@ -30,7 +30,7 @@ export const teamMembers: TeamMember[] = [
     With deep roots in the travel and hospitality sector, Dipesh excels at transforming complex business challenges into elegant technological solutions. His signature approach combines data-driven insights with creative problem-solving, consistently delivering results for both Fortune 100 corporations and ambitious mid-sized companies.
     
     What sets Dipesh apart is his rare ability to unite high-level strategy with practical implementation. Whether orchestrating large-scale digital transformations or optimizing mission-critical business processes, he ensures every technological investment drives meaningful business outcomes. This bridges-and-builds philosophy has made him an invaluable partner to organizations navigating today's rapidly evolving digital landscape. Dipesh received a business degree in Management Information Systems from the McCombs school of business at the University of Texas at Austin.`,
-    image: "/placeholder.svg?height=400&width=400",
+    image: "/team/CURRENT_Patel_Dipesh_Big_Ben.jpg",
     linkedin: "https://www.linkedin.com/in/dipeshkpatel/"
   },
   {
@@ -43,7 +43,7 @@ export const teamMembers: TeamMember[] = [
     As a thought leader in human-machine collaboration, Robert guides organizations through complex technological evolution using emerging technologies, while maintaining an unwavering focus on business continuity and ROI-validated use cases. His methodology, anchored in design thinking and practical innovation, bridges the gap between cutting-edge capabilities and real-world implementation. His guiding principle: "Build the right things, and build things right."
     
     Robert holds an M.S. in Computer Science from Southern Methodist University. Outside of work, he is an avid runner and board game enthusiast. He lives in Dallas with his wife, Diana, and their children, Amelia and Noah.`,
-    image: "/placeholder.svg?height=400&width=400",
+    image: "/team/Robert Greiner.png",
     linkedin: "https://www.linkedin.com/in/robertgreiner/"
   },
   {
@@ -60,7 +60,7 @@ export const teamMembers: TeamMember[] = [
     Saurabh holds a B.A. in Mathematics and Economics from Delhi College of Arts & Commerce and a Diploma in Marketing from Jaganath Institute of Management Studies. He is certified in Microsoft Azure Fundamentals & Azure Administrator Associate and continues to stay at the forefront of emerging technologies and data analysis methodologies.
     
     Passionate about leveraging data as a strategic asset, Saurabh is committed to supporting AI/ML initiatives and cloud engineering projects, ensuring seamless data integration and optimal enterprise reporting. His vision includes driving innovation, fostering a data-driven culture, and contributing to the success of organizations through advanced data solutions.`,
-    image: "/placeholder.svg?height=400&width=400",
+    image: "/team/Saurabh Photo.jpg",
     linkedin: "https://www.linkedin.com/in/saurabh-singh-t-a088b8b6/"
   },
   {
@@ -71,7 +71,7 @@ export const teamMembers: TeamMember[] = [
     His expertise is anchored in prestigious certifications, including MBTI practitioner credentials from CPP Asia and Dale Carnegie trainer certification, which he leverages to design and implement comprehensive learning programs that align with strategic business objectives. As a recruitment and training lead, he has revolutionized talent acquisition and development processes, successfully building and nurturing high-potential teams while establishing robust learning frameworks that drive organizational growth.
     
     Drawing from his deep expertise in L&D, Neeraj has mastered the full spectrum of learning interventions - from needs assessment and curriculum design to program delivery and impact measurement. His approach to talent development integrates cutting-edge learning methodologies with strategic HR practices, including performance management systems, competency frameworks, and succession planning. He has successfully implemented these initiatives across diverse sectors, creating sustainable learning ecosystems that foster employee growth and organizational excellence. His consultancy role with various organizations demonstrates his thought leadership in contemporary HR practices and learning technologies, establishing him as a trusted authority in organizational development and talent management.`,
-    image: "/placeholder.svg?height=400&width=400",
+    image: "/team/neeraaj.jpeg",
     linkedin: "https://www.linkedin.com/in/connectforlife/"
   },
   {
@@ -82,7 +82,7 @@ export const teamMembers: TeamMember[] = [
     Proven track record in building and leading high-performing teams to deliver innovative, analytics-driven solutions. She collaborates with internal business partners and external client stakeholders, understands their business problem and builds innovative product or solutions using data science and storyboards the strategic, tactical, and operational hidden patterns and insights using data visualization and business intelligence tools. 
     
     Proven ability to collaborate with global teams and senior leaders to translate complex business challenges into actionable, data-driven strategies that deliver impactful outcomes. She has strong experience in project management, including scope planning, budgeting, resource management (across geographies), project execution and risk management. She managed the team of professionals to build internal tools and deliver client service.`,
-    image: "/placeholder.svg?height=400&width=400"
+    image: "/team/Reva Maheshwari Bhatia.jpg"
   }
 ]
 
