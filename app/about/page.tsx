@@ -153,7 +153,7 @@ export default function AboutPage() {
             <div className="max-w-3xl mx-auto text-center">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold mb-6 text-white">Our Team</h1>
               <p className="text-white text-lg mb-8">
-                Meet the experts behind CoPoint Data's innovative solutions and transformative data strategies
+                Meet the experts behind CoPoint Datas innovative solutions and transformative data strategies
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button className="bg-carolina-blue text-navy hover:bg-carolina-blue/90">Join Our Team</Button>
@@ -218,12 +218,12 @@ export default function AboutPage() {
                         <p className="text-lg text-carolina-blue mb-2">{member.role}</p>
                         {member.linkedin && (
                           <a 
-                            href={member.linkedin} 
+                            href={member.}
                             target="_blank" 
                             rel="noopener noreferrer"
                             className="inline-flex items-center text-navy hover:text-carolina-blue"
                           >
-                            <LinkedIn className="h-5 w-5 mr-1" />
+                            < className="h-5 w-5 mr-1" />
                             <span>LinkedIn</span>
                           </a>
                         )}
