@@ -24,13 +24,13 @@ export default function BlogPage() {
               </Link>
             </div>
             <nav className="hidden md:flex gap-6">
-              <Link href="/" className="nav-link active">
+              <Link href="/" className="nav-link">
                 Home
               </Link>
               <Link href="/services" className="nav-link">
                 Services
               </Link>
-              <Link href="/blog" className="nav-link">
+              <Link href="/blog" className="nav-link active">
                 Blog
               </Link>
               <Link href="/about" className="nav-link">

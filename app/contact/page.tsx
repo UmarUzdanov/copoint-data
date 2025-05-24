@@ -175,7 +175,7 @@ export default function ContactPage() {
                 <div>
                   <h2 className="text-3xl font-light mb-6 text-navy">Contact Information</h2>
                   <p className="text-black mb-8">
-                    We'd love to hear from you. Here's how you can reach us.
+                    We would love to hear from you. Here is how you can reach us.
                   </p>
                   <div className="space-y-6">
                     <div className="flex items-start">
@@ -290,7 +290,7 @@ export default function ContactPage() {
                 <div className="border border-gray-200 rounded-lg p-6">
                   <h3 className="text-xl font-semibold text-basin-slate mb-3">What services does CoPoint Data offer?</h3>
                   <p className="text-black">
-                    CoPoint Data specializes in Microsoft's data ecosystem, offering services including data strategy, business intelligence, AI solutions, cloud migration, data governance, and custom application development.
+                    CoPoint Data specializes in Microsoft s data ecosystem, offering services including data strategy, business intelligence, AI solutions, cloud migration, data governance, and custom application development.
                   </p>
                 </div>
                 
@@ -311,7 +311,7 @@ export default function ContactPage() {
                 <div className="border border-gray-200 rounded-lg p-6">
                   <h3 className="text-xl font-semibold text-basin-slate mb-3">How do we get started working with CoPoint Data?</h3>
                   <p className="text-black">
-                    The process begins with a consultation to understand your business challenges and objectives. From there, we'll develop a tailored proposal outlining our recommended approach, timeline, and investment. Contact us today to schedule your initial consultation.
+                    The process begins with a consultation to understand your business challenges and objectives. From there, we will develop a tailored proposal outlining our recommended approach, timeline, and investment. Contact us today to schedule your initial consultation.
                   </p>
                 </div>
               </div>
@@ -324,7 +324,7 @@ export default function ContactPage() {
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-3xl md:text-4xl font-light mb-4 text-navy">Ready to transform your data strategy?</h2>
             <p className="text-black mb-8 max-w-2xl mx-auto">
-              Let's discuss how CoPoint Data can help you leverage the full power of Microsoft's data ecosystem.
+              Let s discuss how CoPoint Data can help you leverage the full power of Microsofts data ecosystem.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button className="bg-white text-navy hover:bg-white/90">Schedule a Consultation</Button>

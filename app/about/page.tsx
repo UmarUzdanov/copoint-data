@@ -228,7 +228,7 @@ export default function AboutPage() {
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-3xl md:text-4xl font-light mb-4 text-navy">Ready to transform your data strategy?</h2>
             <p className="text-black mb-8 max-w-2xl mx-auto">
-              Let's discuss how CoPoint Data can help you leverage the full power of Microsofts data ecosystem.
+              Let s discuss how CoPoint Data can help you leverage the full power of Microsofts data ecosystem.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button className="bg-white text-navy hover:bg-white/90">Contact Us</Button>

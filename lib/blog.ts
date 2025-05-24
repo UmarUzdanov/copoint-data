@@ -83,7 +83,7 @@ Do you have any additional thoughts on data strategies? We would love to hear fr
 Reach out if you would like to discuss the complete list of data strategy best practices for your organization.`,
     date: "04.08.2025",
     author: authors["dipesh-patel"],
-    image: "/blog/data-strategy.png",
+    image: "/blog/microsoft-tech.png",
   },
   {
     id: "3",
@@ -106,7 +106,7 @@ In 2025, focus on analytics, data, and customer-centric strategies to achieve su
 Connect with us at CoPoint Data!`,
     date: "04.15.2025",
     author: authors["john-humphrey"],
-    image: "/blog/microsoft-tech.png",
+    image: "/blog/screen.png",
   },
   {
     id: "4",
@@ -137,7 +137,7 @@ At CoPoint Data, we tackle these challenges daily, treating your investments as 
 Visit us at www.copointdata.com to explore how we can elevate your business through AI and strategic data management.`,
     date: "04.22.2025",
     author: authors["john-humphrey"],
-    image: "/blog/screen.png",
+    image: "/blog/group.png",
   },
   {
     id: "5",
@@ -266,7 +266,7 @@ To truly harness AI's potential, businesses need a reliable platform that simpli
 Let's move beyond the buzzwords and focus on real solutions. With Azure, your business can turn AI dreams into reality, driving growth, efficiency, and innovation in the process.`,
     date: "05.28.2025",
     author: authors["saurabh"],
-    image: "/blog/ai-productivity.png",
+    image: "/blog/microsoft-tech.png",
   },
   {
     id: "10",

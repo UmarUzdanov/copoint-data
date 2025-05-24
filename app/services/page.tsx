@@ -21,10 +21,10 @@ export default function ServicesPage() {
             </Link>
           </div>
           <nav className="hidden md:flex gap-6">
-            <Link href="/" className="nav-link active">
+            <Link href="/" className="nav-link">
               Home
             </Link>
-            <Link href="/services" className="nav-link">
+            <Link href="/services" className="nav-link active">
               Services
             </Link>
             <Link href="/blog" className="nav-link">
