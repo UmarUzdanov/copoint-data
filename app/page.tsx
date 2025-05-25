@@ -1,7 +1,7 @@
 import Link from "next/link"
 import Image from "next/image"
-import { Button } from "@/components/ui/button"
-import { ChevronRight, Target, Handshake, LineChart } from "lucide-react"
+import {Button} from "@/components/ui/button"
+import {ChevronRight, Handshake, LineChart, Target} from "lucide-react"
 
 export default function Home() {
   return (
@@ -63,7 +63,7 @@ export default function Home() {
           <section className="relative h-[50vh] flex items-center">
             <div className="absolute inset-0 z-0">
               <Image
-                  src="/copoint_image.jpg"
+                  src="/home_hero.jpg"
                   alt="Microsoft Tech Dashboard"
                   fill
                   className="object-cover"
@@ -97,7 +97,7 @@ export default function Home() {
               <div className="text-center mb-12">
                 <h2 className="text-3xl md:text-4xl font-light text-navy mb-4">
                   We put{" "}
-                  <span className="font-semibold text-basin-slate underline decoration-carolina-blue">
+                  <span className="font-semibold text-basin-slate">
                   human intelligence
                 </span>{" "}
                   in AI
@@ -105,7 +105,7 @@ export default function Home() {
                 <div className="section-divider"></div>
               </div>
               <div className="grid md:grid-cols-3 gap-8">
-                <div className="bg-white p-8 rounded-lg shadow-sm hover:shadow-md hover:border-carolina-blue hover:border transition-all duration-300">
+                <div className="bg-white p-8 rounded-lg shadow-sm  hover:shadow-lg hover:translate-y-[-5px]">
                   <h3 className="text-xl font-semibold mb-4 text-basin-slate">
                     Want to implement AI but dont have a comprehensive strategy to do it?
                   </h3>
@@ -114,7 +114,7 @@ export default function Home() {
                     business goals and delivers measurable results.
                   </p>
                 </div>
-                <div className="bg-white p-8 rounded-lg shadow-sm hover:shadow-md hover:border-carolina-blue hover:border transition-all duration-300">
+                <div className="bg-white p-8 rounded-lg shadow-sm hover:shadow-lg hover:translate-y-[-5px]">
                   <h3 className="text-xl font-semibold mb-4 text-basin-slate">
                     Want to know how to leverage the various AI and data tools in the Microsoft stack?
                   </h3>
@@ -123,7 +123,7 @@ export default function Home() {
                     for your specific needs and challenges.
                   </p>
                 </div>
-                <div className="bg-white p-8 rounded-lg shadow-sm hover:shadow-md hover:border-carolina-blue hover:border transition-all duration-300">
+                <div className="bg-white p-8 rounded-lg shadow-sm hover:shadow-lg hover:translate-y-[-5px]">
                   <h3 className="text-xl font-semibold mb-4 text-basin-slate">
                     Do have a clear ROI or business outcomes you are trying to achieve through implementing AI?
                   </h3>
@@ -136,11 +136,12 @@ export default function Home() {
             </div>
           </section>
           {/* Our Approach Section */}
-          <section id="approach" className="py-16 bg-basin-slate">
+          <section id="approach" className="py-16 bg-gray-bg">
             <div className="container mx-auto px-4">
               <div className="text-center mb-12">
-                <h2 className="text-3xl md:text-4xl font-light text-white mb-4">Our Approach</h2>
-                <div className="w-16 h-1 bg-navy mx-auto my-4"></div>
+                <h2 className="text-3xl md:text-4xl font-light text-navy mb-4">Our Approach</h2>
+                <div className="section-divider"></div>
+
               </div>
               <div className="grid md:grid-cols-4 gap-6">
                 <div className="relative">

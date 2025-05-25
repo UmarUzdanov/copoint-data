@@ -82,7 +82,9 @@ export const teamMembers: TeamMember[] = [
     Proven track record in building and leading high-performing teams to deliver innovative, analytics-driven solutions. She collaborates with internal business partners and external client stakeholders, understands their business problem and builds innovative product or solutions using data science and storyboards the strategic, tactical, and operational hidden patterns and insights using data visualization and business intelligence tools. 
     
     Proven ability to collaborate with global teams and senior leaders to translate complex business challenges into actionable, data-driven strategies that deliver impactful outcomes. She has strong experience in project management, including scope planning, budgeting, resource management (across geographies), project execution and risk management. She managed the team of professionals to build internal tools and deliver client service.`,
-    image: "/team/Reva Maheshwari Bhatia.jpg"
+    image: "/team/Reva Maheshwari Bhatia.jpg",
+    linkedin: "https://www.linkedin.com/in/connectforlife/"
+
   }
 ]
 

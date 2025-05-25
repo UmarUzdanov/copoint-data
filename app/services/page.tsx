@@ -1,6 +1,6 @@
 import Link from "next/link"
-import { Button } from "@/components/ui/button"
-import { ChevronRight, Database, Brain, BarChart3, Cloud, FileText, ArrowRight } from "lucide-react"
+import {Button} from "@/components/ui/button"
+import {ArrowRight, BarChart3, Brain, ChevronRight, Cloud, Database, FileText} from "lucide-react"
 import Image from "next/image";
 
 export default function ServicesPage() {
@@ -61,8 +61,18 @@ export default function ServicesPage() {
 
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="bg-navy py-16 md:py-24">
-          <div className="container mx-auto px-4">
+        <section className="relative h-[50vh] flex items-center">
+          <div className="absolute inset-0 z-0">
+            <Image
+                src="/copoint-hero-interior-1440.png"
+                alt="Contact Us"
+                fill
+                className="object-cover"
+                priority
+            />
+            <div className="absolute inset-0 bg-navy/70"></div>
+          </div>
+          <div className="container mx-auto px-4 relative z-10">
             <div className="max-w-3xl mx-auto text-center">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold mb-6 text-white">Our Services</h1>
               <p className="text-white text-lg mb-8">

@@ -1,4 +1,4 @@
-import type { Config } from "tailwindcss"
+import type {Config} from "tailwindcss"
 
 const config = {
   darkMode: ["class"],
@@ -23,6 +23,7 @@ const config = {
         "carolina-blue": "#7BAFD4",
         navy: "#13294B",
         "gray-bg": "#F8F8F8",
+        "blue-h2": "#13294B",
 
         // Secondary Palette
         "basin-slate": "#4F758B",

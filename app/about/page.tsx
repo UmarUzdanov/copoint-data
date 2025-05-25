@@ -1,8 +1,8 @@
 import Link from "next/link"
 import Image from "next/image"
-import { Button } from "@/components/ui/button"
-import { Linkedin } from "lucide-react"
-import { getTeamMembers } from "@/lib/team"
+import {Button} from "@/components/ui/button"
+import {Linkedin} from "lucide-react"
+import {getTeamMembers} from "@/lib/team"
 
 export default function AboutPage() {
   const teamMembers = getTeamMembers()
@@ -62,8 +62,18 @@ export default function AboutPage() {
       </header>
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="bg-navy py-16 md:py-24">
-          <div className="container mx-auto px-4">
+        <section className="relative h-[50vh] flex items-center">
+          <div className="absolute inset-0 z-0">
+            <Image
+                src="copoint-hero-interior-1440.png"
+                alt="Microsoft Tech Dashboard"
+                fill
+                className="object-cover"
+                priority
+            />
+            <div className="absolute inset-0 bg-navy/70"></div>
+          </div>
+          <div className="container mx-auto px-4 relative z-10">
             <div className="max-w-3xl mx-auto text-center">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold mb-6 text-white">Our Team</h1>
               <p className="text-white text-lg mb-8">
@@ -81,6 +91,8 @@ export default function AboutPage() {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               <h2 className="text-3xl md:text-4xl font-light mb-8 text-navy text-center">About CoPoint Data</h2>
+              <div className="section-divider"></div>
+
               <p className="text-lg mb-6 text-black">
                 CoPoint Data is a premier data consulting firm specializing in Microsofts data ecosystem. We help organizations unlock the full potential of their data through sophisticated analytics, AI solutions, and strategic data management.
               </p>
@@ -113,7 +125,9 @@ export default function AboutPage() {
         <section className="py-16 bg-gray-bg">
           <div className="container mx-auto px-4">
             <h2 className="text-3xl md:text-4xl font-light mb-12 text-navy text-center">Our Leadership Team</h2>
-            
+            <div className="section-divider"></div>
+
+
             <div className="grid md:grid-cols-2 gap-12">
               {teamMembers.map((member, index) => (
                 <div key={index} className="bg-white rounded-lg overflow-hidden shadow-md transition-all hover:shadow-lg">
@@ -188,7 +202,8 @@ export default function AboutPage() {
         <section className="py-16 bg-white">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
-              <h2 className="text-3xl md:text-4xl font-light mb-12 text-navy">Our Values</h2>
+              <h2 className="text-3xl md:text-4xl font-light text-navy mb-4">Our Values</h2>
+              <div className="section-divider"></div>
               
               <div className="grid md:grid-cols-3 gap-8">
                 <div className="p-6 transition-all hover:translate-y-[-5px]">

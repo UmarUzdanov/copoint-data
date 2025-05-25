@@ -1,9 +1,9 @@
 import Link from "next/link"
 import Image from "next/image"
-import { Button } from "@/components/ui/button"
-import { getTeamMembers } from "@/lib/team"
-import { Linkedin, ArrowLeft } from "lucide-react"
-import { notFound } from "next/navigation"
+import {Button} from "@/components/ui/button"
+import {getTeamMembers} from "@/lib/team"
+import {ArrowLeft, Linkedin} from "lucide-react"
+import {notFound} from "next/navigation"
 
 export default function TeamMemberPage({ params }: { params: { slug: string } }) {
   const teamMembers = getTeamMembers()
@@ -72,7 +72,17 @@ export default function TeamMemberPage({ params }: { params: { slug: string } })
 
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="bg-navy py-16 md:py-24">
+        <section className="relative h-[50vh] flex items-center">
+          <div className="absolute inset-0 z-0">
+            <Image
+                src="/home_hero.jpg"
+                alt="Microsoft Tech Dashboard"
+                fill
+                className="object-cover"
+                priority
+            />
+            <div className="absolute inset-0 bg-navy/70"></div>
+          </div>
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto text-center">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold mb-6 text-white">{member.name}</h1>

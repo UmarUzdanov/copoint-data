@@ -1,7 +1,7 @@
 import Link from "next/link"
 import Image from "next/image"
-import { Button } from "@/components/ui/button"
-import { Mail, Phone, MapPin, Clock, Send } from "lucide-react"
+import {Button} from "@/components/ui/button"
+import {Clock, Mail, MapPin, Phone, Send} from "lucide-react"
 
 export default function ContactPage() {
   return (
@@ -60,8 +60,18 @@ export default function ContactPage() {
       </header>
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="bg-navy py-16 md:py-24">
-          <div className="container mx-auto px-4">
+        <section className="relative h-[50vh] flex items-center">
+          <div className="absolute inset-0 z-0">
+            <Image
+                src="/copoint-hero-interior-1440.png"
+                alt="Contact Us"
+                fill
+                className="object-cover"
+                priority
+            />
+            <div className="absolute inset-0 bg-navy/70"></div>
+          </div>
+          <div className="container mx-auto px-4 relative z-10">
             <div className="max-w-3xl mx-auto text-center">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold mb-6 text-white">Contact Us</h1>
               <p className="text-white text-lg mb-8">
