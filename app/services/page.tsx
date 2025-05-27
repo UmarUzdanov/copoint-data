@@ -716,27 +716,27 @@ export default function ServicesPage() {
               </h3>
               <ul className="space-y-2">
                 <li>
-                  <a href="#" className="nav-link">
+                  <a href="/services" className="nav-link">
                     Data Management
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="nav-link">
+                  <a href="/services" className="nav-link">
                     AI Solutions
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="nav-link">
+                  <a href="/services" className="nav-link">
                     Business Intelligence
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="nav-link">
+                  <a href="/services" className="nav-link">
                     Cloud Solutions
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="nav-link">
+                  <a href="/services" className="nav-link">
                     Data Strategy
                   </a>
                 </li>

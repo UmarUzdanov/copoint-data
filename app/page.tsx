@@ -376,27 +376,32 @@ export default function Home() {
                 </h3>
                 <ul className="space-y-2">
                   <li>
-                    <a href="#" className="nav-link hover:text-carolina-blue hover:translate-x-1 inline-block transition-all duration-200">
+                    <a href="/services"
+                       className="nav-link hover:text-carolina-blue hover:translate-x-1 inline-block transition-all duration-200">
                       Data Management
                     </a>
                   </li>
                   <li>
-                    <a href="#" className="nav-link hover:text-carolina-blue hover:translate-x-1 inline-block transition-all duration-200">
+                    <a href="/services"
+                       className="nav-link hover:text-carolina-blue hover:translate-x-1 inline-block transition-all duration-200">
                       AI Solutions
                     </a>
                   </li>
                   <li>
-                    <a href="#" className="nav-link hover:text-carolina-blue hover:translate-x-1 inline-block transition-all duration-200">
+                    <a href="/services"
+                       className="nav-link hover:text-carolina-blue hover:translate-x-1 inline-block transition-all duration-200">
                       Business Intelligence
                     </a>
                   </li>
                   <li>
-                    <a href="#" className="nav-link hover:text-carolina-blue hover:translate-x-1 inline-block transition-all duration-200">
+                    <a href="/services"
+                       className="nav-link hover:text-carolina-blue hover:translate-x-1 inline-block transition-all duration-200">
                       Cloud Solutions
                     </a>
                   </li>
                   <li>
-                    <a href="#" className="nav-link hover:text-carolina-blue hover:translate-x-1 inline-block transition-all duration-200">
+                    <a href="/services"
+                       className="nav-link hover:text-carolina-blue hover:translate-x-1 inline-block transition-all duration-200">
                       Data Strategy
                     </a>
                   </li>
