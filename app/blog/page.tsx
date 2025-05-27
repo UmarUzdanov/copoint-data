@@ -1,6 +1,7 @@
 import Link from "next/link"
 import Image from "next/image"
 import {Button} from "@/components/ui/button"
+import {NewsletterForm} from "@/components/ui/newsletter-form"
 import {getBlogPosts} from "@/lib/blog"
 import {CalendarIcon, User2} from "lucide-react"
 
@@ -85,10 +86,12 @@ export default function BlogPage() {
                   Insights, strategies, and expert perspectives on data, AI, and Microsoft technologies
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <Button variant="outline"
-                          className="bg-transparent border-white text-white hover:bg-white hover:text-navy transition-colors duration-300">
-                    Subscribe to Updates
-                  </Button>
+                  <Link href="#newsletter">
+                    <Button variant="outline"
+                            className="bg-transparent border-white text-white hover:bg-white hover:text-navy transition-colors duration-300">
+                      Subscribe to Updates
+                    </Button>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -154,20 +157,15 @@ export default function BlogPage() {
             </div>
           </section>
           {/* Newsletter Section */}
-          <section className="py-16 bg-carolina-blue">
+          <section id="newsletter" className="py-16 bg-carolina-blue">
             <div className="container mx-auto px-4">
               <div className="max-w-3xl mx-auto text-center">
                 <h2 className="text-3xl md:text-4xl font-light mb-4 text-navy">Stay Updated</h2>
                 <p className="text-black mb-8">
                   Subscribe to our newsletter to receive the latest insights on data, AI, and Microsoft technologies.
                 </p>
-                <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <input
-                      type="email"
-                      placeholder="Your email address"
-                      className="px-4 py-3 rounded-md focus:outline-none focus:ring-2 focus:ring-navy min-w-[300px]"
-                  />
-                  <Button className="bg-navy text-white hover:bg-navy/90">Subscribe</Button>
+                <div className="relative">
+                  <NewsletterForm/>
                 </div>
               </div>
             </div>

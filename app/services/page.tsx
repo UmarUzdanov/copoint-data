@@ -109,7 +109,6 @@ export default function ServicesPage() {
                 businesses transform their operations, make data-driven decisions, and achieve measurable results.
               </p>
             </div>
-
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               {/* Data Management */}
               <div className="bg-gray-bg p-8 rounded-lg transition-all hover:shadow-lg hover:translate-y-[-5px]">
@@ -135,10 +134,8 @@ export default function ServicesPage() {
                     <span>Data warehousing and lake solutions</span>
                   </li>
                 </ul>
-                <Link
-                    href="/contact"
-                  className="inline-flex items-center text-basin-slate hover:text-carolina-blue font-semibold"
-                >
+                <Link href="/contact"
+                      className="inline-flex items-center text-basin-slate hover:text-carolina-blue font-semibold">
                   Learn more <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </div>
@@ -167,10 +164,8 @@ export default function ServicesPage() {
                     <span>AI-powered process automation</span>
                   </li>
                 </ul>
-                <Link
-                    href="/contact"
-                  className="inline-flex items-center text-basin-slate hover:text-carolina-blue font-semibold"
-                >
+                <Link href="/contact"
+                      className="inline-flex items-center text-basin-slate hover:text-carolina-blue font-semibold">
                   Learn more <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </div>
@@ -199,10 +194,8 @@ export default function ServicesPage() {
                     <span>Self-service BI enablement</span>
                   </li>
                 </ul>
-                <Link
-                    href="/contact"
-                  className="inline-flex items-center text-basin-slate hover:text-carolina-blue font-semibold"
-                >
+                <Link href="/contact"
+                      className="inline-flex items-center text-basin-slate hover:text-carolina-blue font-semibold">
                   Learn more <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </div>
@@ -231,10 +224,8 @@ export default function ServicesPage() {
                     <span>Cloud optimization and management</span>
                   </li>
                 </ul>
-                <Link
-                    href="/contact"
-                  className="inline-flex items-center text-basin-slate hover:text-carolina-blue font-semibold"
-                >
+                <Link href="/contact"
+                      className="inline-flex items-center text-basin-slate hover:text-carolina-blue font-semibold">
                   Learn more <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </div>
@@ -263,10 +254,8 @@ export default function ServicesPage() {
                     <span>Data governance framework design</span>
                   </li>
                 </ul>
-                <Link
-                    href="/contact"
-                  className="inline-flex items-center text-basin-slate hover:text-carolina-blue font-semibold"
-                >
+                <Link href="/contact"
+                      className="inline-flex items-center text-basin-slate hover:text-carolina-blue font-semibold">
                   Learn more <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </div>
@@ -274,21 +263,10 @@ export default function ServicesPage() {
               {/* AI Productivity Sprint */}
               <div className="bg-gray-bg p-8 rounded-lg transition-all hover:shadow-lg hover:translate-y-[-5px]">
                 <div className="bg-carolina-blue/20 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-6">
-                  <svg
-                    width="32"
-                    height="32"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="text-basin-slate"
-                  >
-                    <path
-                      d="M13 10V3L4 14H11V21L20 10H13Z"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
+                  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                       className="text-basin-slate">
+                    <path d="M13 10V3L4 14H11V21L20 10H13Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round"
+                          strokeLinejoin="round"/>
                   </svg>
                 </div>
                 <h3 className="text-xl font-semibold mb-4 text-basin-slate">AI Productivity Sprint</h3>
@@ -299,21 +277,19 @@ export default function ServicesPage() {
                 <ul className="space-y-2 mb-6">
                   <li className="flex items-start">
                     <ChevronRight className="h-5 w-5 text-carolina-blue shrink-0 mt-0.5" />
-                    <span>Practical AI implementation training</span>
+                    <span>Customized AI training for your team</span>
                   </li>
                   <li className="flex items-start">
                     <ChevronRight className="h-5 w-5 text-carolina-blue shrink-0 mt-0.5" />
-                    <span>Role-specific AI tool mastery</span>
+                    <span>Workflow analysis and optimization</span>
                   </li>
                   <li className="flex items-start">
                     <ChevronRight className="h-5 w-5 text-carolina-blue shrink-0 mt-0.5" />
-                    <span>Immediate productivity gains</span>
+                    <span>Hands-on AI implementation support</span>
                   </li>
                 </ul>
-                <Link
-                    href="/contact"
-                  className="inline-flex items-center text-basin-slate hover:text-carolina-blue font-semibold"
-                >
+                <Link href="/contact"
+                      className="inline-flex items-center text-basin-slate hover:text-carolina-blue font-semibold">
                   Learn more <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </div>
@@ -329,7 +305,7 @@ export default function ServicesPage() {
                 <h2 className="text-3xl md:text-4xl font-light text-white mb-4">AI Productivity Sprint</h2>
                 <div className="w-16 h-1 bg-carolina-blue my-4"></div>
                 <p className="text-white mb-6">
-                  Transform your teams productivity through our intensive, hands-on AI Productivity Sprint. This
+                  Transform your team's productivity through our intensive, hands-on AI Productivity Sprint. This
                   focused program takes professionals from any background and rapidly equips them with practical AI
                   skills that enhance their daily work.
                 </p>
@@ -345,8 +321,8 @@ export default function ServicesPage() {
                     <div>
                       <h4 className="text-lg font-semibold text-white">Morning Acceleration: Foundation Building</h4>
                       <p className="text-white">
-                        We begin by establishing a practical understanding of AI capabilities relevant to your teams
-                        work.
+                        We begin by establishing a practical understanding of AI capabilities relevant to your team's
+                        work, ensuring immediate relevance and application.
                       </p>
                     </div>
                   </div>
@@ -355,12 +331,11 @@ export default function ServicesPage() {
                       <span className="text-navy font-semibold">2</span>
                     </div>
                     <div>
-                      <h4 className="text-lg font-semibold text-white">
-                        Afternoon Implementation: Hands-on Integration
-                      </h4>
+                      <h4 className="text-lg font-semibold text-white">Afternoon Implementation: Hands-on
+                        Integration</h4>
                       <p className="text-white">
                         Teams work directly with AI tools chosen for their specific needs, guided through real task
-                        automation.
+                        automation, content creation, analysis, and workflow optimization.
                       </p>
                     </div>
                   </div>
@@ -372,139 +347,80 @@ export default function ServicesPage() {
                       <h4 className="text-lg font-semibold text-white">Post-Sprint Momentum</h4>
                       <p className="text-white">
                         Participants receive detailed implementation guides and follow-up support to ensure successful
-                        integration.
+                        integration into their daily work with structured check-ins.
                       </p>
                     </div>
                   </div>
                 </div>
-                <Link href="/contact"><Button className="bg-carolina-blue text-navy hover:bg-carolina-blue/90">Schedule
-                  Your Sprint</Button></Link>
+                <Link href="/contact">
+                  <Button className="bg-carolina-blue text-navy hover:bg-carolina-blue/90">Schedule Your Sprint</Button>
+                </Link>
               </div>
               <div className="bg-white p-8 rounded-lg">
                 <h3 className="text-xl font-semibold mb-6 text-basin-slate">Sprint Outcomes</h3>
                 <ul className="space-y-4">
                   <li className="flex items-start">
                     <div className="bg-carolina-blue/20 p-2 rounded-full mr-4 shrink-0">
-                      <svg
-                        width="20"
-                        height="20"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="text-basin-slate"
-                      >
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                           className="text-basin-slate">
                         <path
-                          d="M9 12L11 14L15 10M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z"
-                          stroke="currentColor"
-                          strokeWidth="2"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
+                            d="M9 12L11 14L15 10M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z"
+                            stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                       </svg>
                     </div>
                     <span>Master practical usage of role-specific AI tools that enhance daily work</span>
                   </li>
                   <li className="flex items-start">
                     <div className="bg-carolina-blue/20 p-2 rounded-full mr-4 shrink-0">
-                      <svg
-                        width="20"
-                        height="20"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="text-basin-slate"
-                      >
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                           className="text-basin-slate">
                         <path
-                          d="M9 12L11 14L15 10M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z"
-                          stroke="currentColor"
-                          strokeWidth="2"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
+                            d="M9 12L11 14L15 10M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z"
+                            stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                       </svg>
                     </div>
                     <span>Create and implement automated workflows that save hours of manual work</span>
                   </li>
                   <li className="flex items-start">
                     <div className="bg-carolina-blue/20 p-2 rounded-full mr-4 shrink-0">
-                      <svg
-                        width="20"
-                        height="20"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="text-basin-slate"
-                      >
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                           className="text-basin-slate">
                         <path
-                          d="M9 12L11 14L15 10M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z"
-                          stroke="currentColor"
-                          strokeWidth="2"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
+                            d="M9 12L11 14L15 10M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z"
+                            stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                       </svg>
                     </div>
                     <span>Develop confidence in applying AI solutions to real workplace challenges</span>
                   </li>
                   <li className="flex items-start">
                     <div className="bg-carolina-blue/20 p-2 rounded-full mr-4 shrink-0">
-                      <svg
-                        width="20"
-                        height="20"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="text-basin-slate"
-                      >
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                           className="text-basin-slate">
                         <path
-                          d="M9 12L11 14L15 10M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z"
-                          stroke="currentColor"
-                          strokeWidth="2"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
+                            d="M9 12L11 14L15 10M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z"
+                            stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                       </svg>
                     </div>
                     <span>Establish clear processes for identifying AI-suitable tasks in their roles</span>
                   </li>
                   <li className="flex items-start">
                     <div className="bg-carolina-blue/20 p-2 rounded-full mr-4 shrink-0">
-                      <svg
-                        width="20"
-                        height="20"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="text-basin-slate"
-                      >
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                           className="text-basin-slate">
                         <path
-                          d="M9 12L11 14L15 10M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z"
-                          stroke="currentColor"
-                          strokeWidth="2"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
+                            d="M9 12L11 14L15 10M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z"
+                            stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                       </svg>
                     </div>
                     <span>Build expertise in prompt engineering and AI tool optimization</span>
                   </li>
                   <li className="flex items-start">
                     <div className="bg-carolina-blue/20 p-2 rounded-full mr-4 shrink-0">
-                      <svg
-                        width="20"
-                        height="20"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="text-basin-slate"
-                      >
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                           className="text-basin-slate">
                         <path
-                          d="M9 12L11 14L15 10M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z"
-                          stroke="currentColor"
-                          strokeWidth="2"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
+                            d="M9 12L11 14L15 10M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z"
+                            stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                       </svg>
                     </div>
                     <span>Create guidelines for responsible and effective AI implementation</span>
@@ -525,6 +441,28 @@ export default function ServicesPage() {
                       <ChevronRight className="h-5 w-5 text-carolina-blue shrink-0 mt-0.5" />
                       <span>Organizations wanting to build practical AI capabilities across their workforce</span>
                     </li>
+                    <li className="flex items-start">
+                      <ChevronRight className="h-5 w-5 text-carolina-blue shrink-0 mt-0.5"/>
+                      <span>Professionals determined to stay competitive in an AI-enhanced workplace</span>
+                    </li>
+                  </ul>
+                </div>
+                <div className="mt-8 pt-6 border-t border-gray-200">
+                  <h4 className="text-lg font-semibold mb-4 text-basin-slate">Custom Sprint Design</h4>
+                  <p className="text-black mb-4">Before each sprint, we:</p>
+                  <ul className="space-y-2">
+                    <li className="flex items-start">
+                      <ChevronRight className="h-5 w-5 text-carolina-blue shrink-0 mt-0.5"/>
+                      <span>Analyze your team's current workflows and pain points</span>
+                    </li>
+                    <li className="flex items-start">
+                      <ChevronRight className="h-5 w-5 text-carolina-blue shrink-0 mt-0.5"/>
+                      <span>Identify high-impact areas for AI implementation</span>
+                    </li>
+                    <li className="flex items-start">
+                      <ChevronRight className="h-5 w-5 text-carolina-blue shrink-0 mt-0.5"/>
+                      <span>Select relevant tools and examples for your industry</span>
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -543,19 +481,14 @@ export default function ServicesPage() {
                 measurable business value.
               </p>
             </div>
-
             <div className="grid md:grid-cols-4 gap-6">
               <div className="relative">
                 <div className="bg-carolina-blue text-navy p-6 rounded-lg h-full transition-all hover:shadow-lg">
                   <div className="flex justify-center mb-3">
                     <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path
-                        d="M12 16V12M12 8H12.01M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z"
-                        stroke="#13294B"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
+                          d="M12 16V12M12 8H12.01M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z"
+                          stroke="#13294B" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                     </svg>
                   </div>
                   <h3 className="text-xl font-semibold mb-2 text-navy text-center">Strategize</h3>
@@ -567,25 +500,15 @@ export default function ServicesPage() {
                   <ChevronRight className="h-6 w-6 text-carolina-blue" />
                 </div>
               </div>
-
               <div className="relative">
                 <div className="bg-carolina-blue text-navy p-6 rounded-lg h-full transition-all hover:shadow-lg">
                   <div className="flex justify-center mb-3">
                     <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path
-                        d="M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z"
-                        stroke="#13294B"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                      <path
-                        d="M9 12L11 14L15 10"
-                        stroke="#13294B"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
+                          d="M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z"
+                          stroke="#13294B" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                      <path d="M9 12L11 14L15 10" stroke="#13294B" strokeWidth="2" strokeLinecap="round"
+                            strokeLinejoin="round"/>
                     </svg>
                   </div>
                   <h3 className="text-xl font-semibold mb-2 text-navy text-center">Implement</h3>
@@ -597,26 +520,14 @@ export default function ServicesPage() {
                   <ChevronRight className="h-6 w-6 text-carolina-blue" />
                 </div>
               </div>
-
               <div className="relative">
                 <div className="bg-carolina-blue text-navy p-6 rounded-lg h-full transition-all hover:shadow-lg">
                   <div className="flex justify-center mb-3">
                     <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M3 7L9 4L15 7L21 4V17L15 20L9 17L3 20V7Z"
-                        stroke="#13294B"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
+                      <path d="M3 7L9 4L15 7L21 4V17L15 20L9 17L3 20V7Z" stroke="#13294B" strokeWidth="2"
+                            strokeLinecap="round" strokeLinejoin="round"/>
                       <path d="M9 4V17" stroke="#13294B" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                      <path
-                        d="M15 7V20"
-                        stroke="#13294B"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
+                      <path d="M15 7V20" stroke="#13294B" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                     </svg>
                   </div>
                   <h3 className="text-xl font-semibold mb-2 text-navy text-center">Transition</h3>
@@ -628,18 +539,13 @@ export default function ServicesPage() {
                   <ChevronRight className="h-6 w-6 text-carolina-blue" />
                 </div>
               </div>
-
               <div>
                 <div className="bg-carolina-blue text-navy p-6 rounded-lg h-full transition-all hover:shadow-lg">
                   <div className="flex justify-center mb-3">
                     <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path
-                        d="M18 18.7023C16.5536 17.0208 14.4154 16 12 16C9.58457 16 7.44637 17.0208 6 18.7023M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12ZM15 9C15 10.6569 13.6569 12 12 12C10.3431 12 9 10.6569 9 9C9 7.34315 10.3431 6 12 6C13.6569 6 15 7.34315 15 9Z"
-                        stroke="#13294B"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
+                          d="M18 18.7023C16.5536 17.0208 14.4154 16 12 16C9.58457 16 7.44637 17.0208 6 18.7023M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12ZM15 9C15 10.6569 13.6569 12 12 12C10.3431 12 9 10.6569 9 9C9 7.34315 10.3431 6 12 6C13.6569 6 15 7.34315 15 9Z"
+                          stroke="#13294B" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                     </svg>
                   </div>
                   <h3 className="text-xl font-semibold mb-2 text-navy text-center">Support</h3>
@@ -664,9 +570,8 @@ export default function ServicesPage() {
                 <Button className="bg-white text-navy hover:bg-white/90">Contact Us</Button>
               </Link>
               <Link href="/contact">
-                <Button variant="outline" className="bg-transparent border-navy text-navy hover:bg-carolina-blue/90">
-                  Schedule a Consultation
-                </Button>
+                <Button variant="outline" className="bg-transparent border-navy text-navy hover:bg-carolina-blue/90">Schedule
+                  a Consultation</Button>
               </Link>
             </div>
           </div>

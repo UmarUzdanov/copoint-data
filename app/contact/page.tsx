@@ -1,7 +1,213 @@
+'use client'
+
 import Link from "next/link"
 import Image from "next/image"
+import {useState} from 'react'
 import {Button} from "@/components/ui/button"
 import {Clock, Mail, MapPin, Phone, Send} from "lucide-react"
+
+export function ContactForm() {
+  const [formData, setFormData] = useState({
+    firstName: '',
+    lastName: '',
+    email: '',
+    company: '',
+    subject: '',
+    message: '',
+    consent: false
+  })
+
+  const [formStatus, setFormStatus] = useState({
+    isSubmitting: false,
+    isSubmitted: false,
+    error: null
+  })
+
+  const handleChange = (e) => {
+    const {name, value, type, checked} = e.target
+    setFormData(prev => ({
+      ...prev,
+      [name]: type === 'checkbox' ? checked : value
+    }))
+  }
+
+  const handleSubmit = async (e) => {
+    e.preventDefault()
+    setFormStatus({isSubmitting: true, isSubmitted: false, error: null})
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      })
+
+      const data = await response.json()
+
+      if (!response.ok) {
+        throw new Error(data.error || 'Something went wrong')
+      }
+
+      setFormStatus({
+        isSubmitting: false,
+        isSubmitted: true,
+        error: null
+      })
+
+      // Reset form after successful submission
+      setFormData({
+        firstName: '',
+        lastName: '',
+        email: '',
+        company: '',
+        subject: '',
+        message: '',
+        consent: false
+      })
+    } catch (error) {
+      setFormStatus({
+        isSubmitting: false,
+        isSubmitted: false,
+        error: error.message
+      })
+    }
+  }
+
+  return (
+      <>
+        {formStatus.isSubmitted ? (
+            <div className="bg-green-50 border border-green-200 text-green-800 p-6 rounded-lg">
+              <h3 className="text-xl font-semibold mb-2">Thank you for your message!</h3>
+              <p>We have received your inquiry and will get back to you shortly.</p>
+              <Button
+                  onClick={() => setFormStatus({...formStatus, isSubmitted: false})}
+                  className="mt-4 bg-carolina-blue text-navy hover:bg-carolina-blue/90"
+              >
+                Send another message
+              </Button>
+            </div>
+        ) : (
+            <form className="space-y-6" onSubmit={handleSubmit}>
+              {formStatus.error && (
+                  <div className="bg-red-50 border border-red-200 text-red-800 p-4 rounded-lg">
+                    {formStatus.error}
+                  </div>
+              )}
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                  <label htmlFor="firstName" className="block text-sm font-medium text-basin-slate mb-1">
+                    First Name*
+                  </label>
+                  <input
+                      type="text"
+                      id="firstName"
+                      name="firstName"
+                      value={formData.firstName}
+                      onChange={handleChange}
+                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-carolina-blue"
+                      required
+                  />
+                </div>
+                <div>
+                  <label htmlFor="lastName" className="block text-sm font-medium text-basin-slate mb-1">
+                    Last Name*
+                  </label>
+                  <input
+                      type="text"
+                      id="lastName"
+                      name="lastName"
+                      value={formData.lastName}
+                      onChange={handleChange}
+                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-carolina-blue"
+                      required
+                  />
+                </div>
+              </div>
+              <div>
+                <label htmlFor="email" className="block text-sm font-medium text-basin-slate mb-1">
+                  Email Address*
+                </label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    value={formData.email}
+                    onChange={handleChange}
+                    className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-carolina-blue"
+                    required
+                />
+              </div>
+              <div>
+                <label htmlFor="company" className="block text-sm font-medium text-basin-slate mb-1">
+                  Company
+                </label>
+                <input
+                    type="text"
+                    id="company"
+                    name="company"
+                    value={formData.company}
+                    onChange={handleChange}
+                    className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-carolina-blue"
+                />
+              </div>
+              <div>
+                <label htmlFor="subject" className="block text-sm font-medium text-basin-slate mb-1">
+                  Subject*
+                </label>
+                <input
+                    type="text"
+                    id="subject"
+                    name="subject"
+                    value={formData.subject}
+                    onChange={handleChange}
+                    className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-carolina-blue"
+                    required
+                />
+              </div>
+              <div>
+                <label htmlFor="message" className="block text-sm font-medium text-basin-slate mb-1">
+                  Message*
+                </label>
+                <textarea
+                    id="message"
+                    name="message"
+                    value={formData.message}
+                    onChange={handleChange}
+                    rows={5}
+                    className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-carolina-blue"
+                    required
+                ></textarea>
+              </div>
+              <div className="flex items-center">
+                <input
+                    type="checkbox"
+                    id="consent"
+                    name="consent"
+                    checked={formData.consent}
+                    onChange={handleChange}
+                    className="h-4 w-4 text-carolina-blue focus:ring-carolina-blue border-gray-300 rounded"
+                    required
+                />
+                <label htmlFor="consent" className="ml-2 block text-sm text-basin-slate">
+                  I consent to CoPoint Data processing my data for the purpose of contacting me.*
+                </label>
+              </div>
+              <Button
+                  type="submit"
+                  className="bg-carolina-blue text-navy hover:bg-carolina-blue/90 w-full md:w-auto"
+                  disabled={formStatus.isSubmitting}
+              >
+                <Send className="h-4 w-4 mr-2"/>
+                {formStatus.isSubmitting ? 'Sending...' : 'Send Message'}
+              </Button>
+            </form>
+        )}
+      </>
+  )
+}
 
 export default function ContactPage() {
   return (
@@ -99,90 +305,7 @@ export default function ContactPage() {
                   <p className="text-black mb-8">
                     Fill out the form below and one of our data experts will get back to you within 24 hours.
                   </p>
-                  <form className="space-y-6">
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                      <div>
-                        <label htmlFor="firstName" className="block text-sm font-medium text-basin-slate mb-1">
-                          First Name*
-                        </label>
-                        <input
-                          type="text"
-                          id="firstName"
-                          className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-carolina-blue"
-                          required
-                        />
-                      </div>
-                      <div>
-                        <label htmlFor="lastName" className="block text-sm font-medium text-basin-slate mb-1">
-                          Last Name*
-                        </label>
-                        <input
-                          type="text"
-                          id="lastName"
-                          className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-carolina-blue"
-                          required
-                        />
-                      </div>
-                    </div>
-                    <div>
-                      <label htmlFor="email" className="block text-sm font-medium text-basin-slate mb-1">
-                        Email Address*
-                      </label>
-                      <input
-                        type="email"
-                        id="email"
-                        className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-carolina-blue"
-                        required
-                      />
-                    </div>
-                    <div>
-                      <label htmlFor="company" className="block text-sm font-medium text-basin-slate mb-1">
-                        Company
-                      </label>
-                      <input
-                        type="text"
-                        id="company"
-                        className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-carolina-blue"
-                      />
-                    </div>
-                    <div>
-                      <label htmlFor="subject" className="block text-sm font-medium text-basin-slate mb-1">
-                        Subject*
-                      </label>
-                      <input
-                        type="text"
-                        id="subject"
-                        className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-carolina-blue"
-                        required
-                      />
-                    </div>
-                    <div>
-                      <label htmlFor="message" className="block text-sm font-medium text-basin-slate mb-1">
-                        Message*
-                      </label>
-                      <textarea
-                        id="message"
-                        rows={5}
-                        className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-carolina-blue"
-                        required
-                      ></textarea>
-                    </div>
-                    <div className="flex items-center">
-                      <input
-                        type="checkbox"
-                        id="consent"
-                        className="h-4 w-4 text-carolina-blue focus:ring-carolina-blue border-gray-300 rounded"
-                        required
-                      />
-                      <label htmlFor="consent" className="ml-2 block text-sm text-basin-slate">
-                        I consent to CoPoint Data processing my data for the purpose of contacting me.*
-                      </label>
-                    </div>
-                    <Button className="bg-carolina-blue text-navy hover:bg-carolina-blue/90 w-full md:w-auto">
-                      <Send className="h-4 w-4 mr-2" />
-                      Send Message
-                    </Button>
-                  </form>
+                  <ContactForm/>
                 </div>
 
                 {/* Contact Information */}
