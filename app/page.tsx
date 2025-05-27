@@ -37,8 +37,13 @@ export default function Home() {
                 Contact
               </Link>
             </nav>
-            <Button className="hidden md:flex bg-carolina-blue text-navy hover:bg-navy hover:text-white transition-colors duration-300">Get Started</Button>
-            <Button variant="ghost" size="icon" className="md:hidden hover:bg-gray-100 transition-colors duration-200">
+            <Link href="/contact">
+              <Button
+                  className="hidden md:flex bg-carolina-blue text-navy hover:bg-navy hover:text-white transition-colors duration-300"
+                  aria-label="Get Started">Get Started</Button>
+            </Link>
+            <Button variant="ghost" size="icon" className="md:hidden hover:bg-gray-100 transition-colors duration-200"
+                    aria-label="Menu">
               <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -83,10 +88,18 @@ export default function Home() {
                   insights and drive business growth.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <Button className="bg-carolina-blue text-navy hover:bg-navy hover:text-white transition-colors duration-300">Learn More</Button>
-                  <Button variant="outline" className="bg-transparent border-white text-white hover:bg-white hover:text-navy transition-colors duration-300">
-                    Contact Us
-                  </Button>
+                  <Link href="/services">
+                    <Button
+                        className="bg-carolina-blue text-navy hover:bg-navy hover:text-white transition-colors duration-300"
+                        aria-label="Learn More">Learn More</Button>
+                  </Link>
+                  <Link href="/contact">
+                    <Button variant="outline"
+                            className="bg-transparent border-white text-white hover:bg-white hover:text-navy transition-colors duration-300"
+                            aria-label="Contact Us">
+                      Contact Us
+                    </Button>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -107,7 +120,7 @@ export default function Home() {
               <div className="grid md:grid-cols-3 gap-8">
                 <div className="bg-white p-8 rounded-lg shadow-sm  hover:shadow-lg hover:translate-y-[-5px]">
                   <h3 className="text-xl font-semibold mb-4 text-basin-slate">
-                    Want to implement AI but dont have a comprehensive strategy to do it?
+                    Want to implement AI but don't have a comprehensive strategy to do it?
                   </h3>
                   <p className="text-black">
                     At CoPoint Data, we help you develop a strategic approach to AI implementation that aligns with your
@@ -119,13 +132,13 @@ export default function Home() {
                     Want to know how to leverage the various AI and data tools in the Microsoft stack?
                   </h3>
                   <p className="text-black">
-                    Our expertise in Microsofts ecosystem allows us to help you navigate and implement the right tools
+                    Our expertise in Microsoft's ecosystem allows us to help you navigate and implement the right tools
                     for your specific needs and challenges.
                   </p>
                 </div>
                 <div className="bg-white p-8 rounded-lg shadow-sm hover:shadow-lg hover:translate-y-[-5px]">
                   <h3 className="text-xl font-semibold mb-4 text-basin-slate">
-                    Do have a clear ROI or business outcomes you are trying to achieve through implementing AI?
+                    Do you have a clear ROI or business outcomes you are trying to achieve through implementing AI?
                   </h3>
                   <p className="text-black">
                     We focus on delivering tangible business value, ensuring your AI investments translate to measurable
@@ -273,7 +286,7 @@ export default function Home() {
                     </div>
                     <div>
                       <h3 className="text-xl font-semibold mb-3 text-basin-slate">Be Purposeful</h3>
-                      <p className="text-black">Think Straight, Communicate, Always to the Right Thing</p>
+                      <p className="text-black">Think Straight, Communicate, Always do the Right Thing</p>
                     </div>
                   </div>
                 </div>
@@ -309,13 +322,20 @@ export default function Home() {
             <div className="container mx-auto px-4 text-center">
               <h2 className="text-3xl md:text-4xl font-light mb-4 text-navy">Ready to transform your data strategy?</h2>
               <p className="text-black mb-8 max-w-2xl mx-auto">
-                Lets discuss how CoPoint Data can help you leverage the full power of Microsofts data ecosystem.
+                Let's discuss how CoPoint Data can help you leverage the full power of Microsoft's data ecosystem.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button className="bg-white text-navy hover:bg-navy hover:text-white transition-colors duration-300">Contact Us</Button>
-                <Button variant="outline" className="bg-transparent border-navy text-navy hover:bg-white hover:border-white transition-all duration-300">
-                  Explore Solutions
-                </Button>
+                <Link href="/contact">
+                  <Button className="bg-white text-navy hover:bg-navy hover:text-white transition-colors duration-300"
+                          aria-label="Contact Us">Contact Us</Button>
+                </Link>
+                <Link href="/services">
+                  <Button variant="outline"
+                          className="bg-transparent border-navy text-navy hover:bg-white hover:border-white transition-all duration-300"
+                          aria-label="Explore Solutions">
+                    Explore Solutions
+                  </Button>
+                </Link>
               </div>
             </div>
           </section>
@@ -335,7 +355,9 @@ export default function Home() {
                 </div>
                 <p className="text-black mb-4">All Data, All Microsoft, All of the Time</p>
                 <div className="flex space-x-4">
-                  <a href="#" className="text-navy hover:text-carolina-blue transition-transform duration-300 hover:scale-110">
+                  <Link href="#"
+                        className="text-navy hover:text-carolina-blue transition-transform duration-300 hover:scale-110"
+                        aria-label="Facebook">
                     <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                       <path
                           fillRule="evenodd"
@@ -343,13 +365,17 @@ export default function Home() {
                           clipRule="evenodd"
                       />
                     </svg>
-                  </a>
-                  <a href="#" className="text-navy hover:text-carolina-blue transition-transform duration-300 hover:scale-110">
+                  </Link>
+                  <Link href="#"
+                        className="text-navy hover:text-carolina-blue transition-transform duration-300 hover:scale-110"
+                        aria-label="Twitter">
                     <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                       <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
                     </svg>
-                  </a>
-                  <a href="#" className="text-navy hover:text-carolina-blue transition-transform duration-300 hover:scale-110">
+                  </Link>
+                  <Link href="#"
+                        className="text-navy hover:text-carolina-blue transition-transform duration-300 hover:scale-110"
+                        aria-label="Instagram">
                     <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                       <path
                           fillRule="evenodd"
@@ -357,8 +383,10 @@ export default function Home() {
                           clipRule="evenodd"
                       />
                     </svg>
-                  </a>
-                  <a href="#" className="text-navy hover:text-carolina-blue transition-transform duration-300 hover:scale-110">
+                  </Link>
+                  <Link href="#"
+                        className="text-navy hover:text-carolina-blue transition-transform duration-300 hover:scale-110"
+                        aria-label="LinkedIn">
                     <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                       <path
                           fillRule="evenodd"
@@ -366,7 +394,7 @@ export default function Home() {
                           clipRule="evenodd"
                       />
                     </svg>
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div>
@@ -376,34 +404,34 @@ export default function Home() {
                 </h3>
                 <ul className="space-y-2">
                   <li>
-                    <a href="/services"
-                       className="nav-link hover:text-carolina-blue hover:translate-x-1 inline-block transition-all duration-200">
+                    <Link href="/services"
+                          className="nav-link hover:text-carolina-blue hover:translate-x-1 inline-block transition-all duration-200">
                       Data Management
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="/services"
-                       className="nav-link hover:text-carolina-blue hover:translate-x-1 inline-block transition-all duration-200">
+                    <Link href="/services"
+                          className="nav-link hover:text-carolina-blue hover:translate-x-1 inline-block transition-all duration-200">
                       AI Solutions
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="/services"
-                       className="nav-link hover:text-carolina-blue hover:translate-x-1 inline-block transition-all duration-200">
+                    <Link href="/services"
+                          className="nav-link hover:text-carolina-blue hover:translate-x-1 inline-block transition-all duration-200">
                       Business Intelligence
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="/services"
-                       className="nav-link hover:text-carolina-blue hover:translate-x-1 inline-block transition-all duration-200">
+                    <Link href="/services"
+                          className="nav-link hover:text-carolina-blue hover:translate-x-1 inline-block transition-all duration-200">
                       Cloud Solutions
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="/services"
+                    <Link href="/services"
                        className="nav-link hover:text-carolina-blue hover:translate-x-1 inline-block transition-all duration-200">
                       Data Strategy
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -414,29 +442,34 @@ export default function Home() {
                 </h3>
                 <ul className="space-y-2">
                   <li>
-                    <a href="#" className="nav-link hover:text-carolina-blue hover:translate-x-1 inline-block transition-all duration-200">
+                    <Link href="/about"
+                          className="nav-link hover:text-carolina-blue hover:translate-x-1 inline-block transition-all duration-200">
                       About Us
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="#" className="nav-link hover:text-carolina-blue hover:translate-x-1 inline-block transition-all duration-200">
+                    <Link href="/team"
+                          className="nav-link hover:text-carolina-blue hover:translate-x-1 inline-block transition-all duration-200">
                       Our Team
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="#" className="nav-link hover:text-carolina-blue hover:translate-x-1 inline-block transition-all duration-200">
+                    <Link href="/about"
+                          className="nav-link hover:text-carolina-blue hover:translate-x-1 inline-block transition-all duration-200">
                       Careers
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="#" className="nav-link hover:text-carolina-blue hover:translate-x-1 inline-block transition-all duration-200">
+                    <Link href="/blog"
+                          className="nav-link hover:text-carolina-blue hover:translate-x-1 inline-block transition-all duration-200">
                       Blog
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="#" className="nav-link hover:text-carolina-blue hover:translate-x-1 inline-block transition-all duration-200">
+                    <Link href="/contact"
+                          className="nav-link hover:text-carolina-blue hover:translate-x-1 inline-block transition-all duration-200">
                       Contact
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -450,14 +483,16 @@ export default function Home() {
                   <p className="mb-2">Seattle, WA 98101</p>
                   <p className="mb-2">United States</p>
                   <p className="mb-2">
-                    <a href="mailto:info@copointdata.com" className="nav-link hover:text-carolina-blue transition-colors duration-200">
+                    <Link href="mailto:info@copointdata.com"
+                          className="nav-link hover:text-carolina-blue transition-colors duration-200">
                       info@copointdata.com
-                    </a>
+                    </Link>
                   </p>
                   <p>
-                    <a href="tel:+12065551234" className="nav-link hover:text-carolina-blue transition-colors duration-200">
+                    <Link href="tel:+12065551234"
+                          className="nav-link hover:text-carolina-blue transition-colors duration-200">
                       (206) 555-1234
-                    </a>
+                    </Link>
                   </p>
                 </address>
               </div>
@@ -465,15 +500,18 @@ export default function Home() {
             <div className="border-t border-gray-200 mt-12 pt-8 text-center text-black">
               <p>&copy; {new Date().getFullYear()} CoPoint Data. All rights reserved.</p>
               <div className="flex justify-center mt-4 space-x-4">
-                <a href="#" className="nav-link hover:text-carolina-blue hover:underline transition-colors duration-200">
+                <Link href="#"
+                      className="nav-link hover:text-carolina-blue hover:underline transition-colors duration-200">
                   Privacy Policy
-                </a>
-                <a href="#" className="nav-link hover:text-carolina-blue hover:underline transition-colors duration-200">
+                </Link>
+                <Link href="#"
+                      className="nav-link hover:text-carolina-blue hover:underline transition-colors duration-200">
                   Terms of Service
-                </a>
-                <a href="#" className="nav-link hover:text-carolina-blue hover:underline transition-colors duration-200">
+                </Link>
+                <Link href="#"
+                      className="nav-link hover:text-carolina-blue hover:underline transition-colors duration-200">
                   Sitemap
-                </a>
+                </Link>
               </div>
             </div>
           </div>
