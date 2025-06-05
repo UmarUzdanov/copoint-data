@@ -337,34 +337,6 @@ export default function AboutPage() {
                   </div>
                 </div>
               ))}
-
-              {/* Placeholder cards for future team members */}
-              {[1, 2, 3].map((placeholder) => (
-                <div
-                  key={placeholder}
-                  className="bg-white rounded-lg overflow-hidden shadow-md border-2 border-dashed border-gray-300"
-                >
-                  <div className="p-6">
-                    <div className="flex flex-col items-center text-center mb-6">
-                      <div className="relative h-24 w-24 rounded-full bg-gray-200 mb-4 flex items-center justify-center">
-                        <svg className="h-8 w-8 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M12 6v6m0 0v6m0-6h6m-6 0H6"
-                          />
-                        </svg>
-                      </div>
-                      <h3 className="text-xl font-semibold text-gray-400 mb-1">Team Member</h3>
-                      <p className="text-gray-400 mb-2">Position Title</p>
-                    </div>
-                    <p className="text-gray-400 text-sm text-center">
-                      Future team member position. Stay tuned for updates on our growing leadership team.
-                    </p>
-                  </div>
-                </div>
-              ))}
             </div>
           </div>
         </section>
