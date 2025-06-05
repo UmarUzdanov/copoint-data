@@ -1,51 +1,9 @@
 import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
-import { MapPin, Clock, DollarSign, Users } from "lucide-react"
+import { ArrowRight, MapPin, Clock, DollarSign, Users } from "lucide-react"
 
 export default function CareersPage() {
-  const openPositions = [
-    {
-      title: "Senior Data Scientist",
-      department: "Data Science",
-      location: "Dallas, TX / Remote",
-      type: "Full-time",
-      description: "Join our team to develop cutting-edge AI and machine learning solutions for enterprise clients.",
-      requirements: [
-        "5+ years of experience in data science and machine learning",
-        "Proficiency in Python, R, and SQL",
-        "Experience with Microsoft Azure and cloud platforms",
-        "Strong communication and client-facing skills",
-      ],
-    },
-    {
-      title: "AI Solutions Architect",
-      department: "Engineering",
-      location: "Dallas, TX / Gurugram, India",
-      type: "Full-time",
-      description: "Design and implement AI-driven solutions that transform business operations for our clients.",
-      requirements: [
-        "7+ years of experience in solution architecture",
-        "Deep knowledge of AI/ML frameworks and tools",
-        "Experience with Microsoft AI services and Azure",
-        "Proven track record of delivering enterprise solutions",
-      ],
-    },
-    {
-      title: "Business Intelligence Consultant",
-      department: "Consulting",
-      location: "Remote",
-      type: "Full-time",
-      description: "Help clients unlock insights from their data through advanced analytics and visualization.",
-      requirements: [
-        "3+ years of experience in business intelligence",
-        "Expertise in Power BI, Tableau, or similar tools",
-        "Strong analytical and problem-solving skills",
-        "Experience in client consulting and project management",
-      ],
-    },
-  ]
-
   return (
     <div className="flex flex-col min-h-screen">
       {/* Navigation */}
@@ -76,14 +34,6 @@ export default function CareersPage() {
               Contact
             </Link>
           </nav>
-          <Link href="/contact">
-            <Button
-              className="hidden md:flex bg-carolina-blue text-navy hover:bg-navy hover:text-white transition-colors duration-300"
-              aria-label="Get Started"
-            >
-              Get Started
-            </Button>
-          </Link>
           <Button variant="ghost" size="icon" className="md:hidden">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -109,174 +59,26 @@ export default function CareersPage() {
         {/* Hero Section */}
         <section className="relative h-[50vh] flex items-center">
           <div className="absolute inset-0 z-0">
-            <Image
-              src="/copoint-hero-interior-1440.png"
-              alt="Careers at CoPoint Data"
-              fill
-              className="object-cover"
-              priority
-            />
+            <Image src="/copoint-hero-interior-1440.png" alt="Careers" fill className="object-cover" priority />
             <div className="absolute inset-0 bg-navy/70"></div>
           </div>
           <div className="container mx-auto px-4 relative z-10">
             <div className="max-w-3xl mx-auto text-center">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold mb-6 text-white">Join Our Team</h1>
               <p className="text-white text-lg mb-8">
-                Build the future of AI and data analytics with a team of passionate experts
+                Build the future of AI and data analytics with a team that values innovation, collaboration, and
+                continuous learning.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Link href="#positions">
+                <Link href="#open-positions">
                   <Button className="bg-carolina-blue text-navy hover:bg-carolina-blue/90">View Open Positions</Button>
                 </Link>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Why Join Us Section */}
-        <section className="py-16 bg-white">
-          <div className="container mx-auto px-4">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-light text-navy mb-4">Why Join CoPoint Data?</h2>
-              <div className="section-divider"></div>
-              <p className="text-black max-w-3xl mx-auto mt-6">
-                We're building the future of AI and data analytics. Join a team where innovation meets impact, and where
-                your expertise can transform businesses worldwide.
-              </p>
-            </div>
-
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-              <div className="text-center p-6">
-                <div className="bg-carolina-blue/20 p-4 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                  <Users className="h-8 w-8 text-basin-slate" />
-                </div>
-                <h3 className="text-xl font-semibold mb-3 text-basin-slate">Collaborative Culture</h3>
-                <p className="text-black">
-                  Work with industry experts in a supportive, innovative environment that values diverse perspectives.
-                </p>
-              </div>
-
-              <div className="text-center p-6">
-                <div className="bg-carolina-blue/20 p-4 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                  <svg className="h-8 w-8 text-basin-slate" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                  </svg>
-                </div>
-                <h3 className="text-xl font-semibold mb-3 text-basin-slate">Cutting-Edge Technology</h3>
-                <p className="text-black">
-                  Work with the latest AI and data technologies, including Microsoft's advanced AI stack and cloud
-                  platforms.
-                </p>
-              </div>
-
-              <div className="text-center p-6">
-                <div className="bg-carolina-blue/20 p-4 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                  <svg className="h-8 w-8 text-basin-slate" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
-                    />
-                  </svg>
-                </div>
-                <h3 className="text-xl font-semibold mb-3 text-basin-slate">Continuous Learning</h3>
-                <p className="text-black">
-                  Grow your skills with ongoing training, certifications, and exposure to diverse client challenges.
-                </p>
-              </div>
-
-              <div className="text-center p-6">
-                <div className="bg-carolina-blue/20 p-4 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                  <MapPin className="h-8 w-8 text-basin-slate" />
-                </div>
-                <h3 className="text-xl font-semibold mb-3 text-basin-slate">Global Impact</h3>
-                <p className="text-black">
-                  Make a difference for clients worldwide with our global presence and follow-the-sun support model.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Open Positions Section */}
-        <section id="positions" className="py-16 bg-gray-bg">
-          <div className="container mx-auto px-4">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-light text-navy mb-4">Open Positions</h2>
-              <div className="section-divider"></div>
-              <p className="text-black max-w-3xl mx-auto mt-6">
-                Explore exciting opportunities to join our growing team and help shape the future of AI and data
-                analytics.
-              </p>
-            </div>
-
-            <div className="space-y-8">
-              {openPositions.map((position, index) => (
-                <div key={index} className="bg-white rounded-lg p-8 shadow-sm hover:shadow-lg transition-all">
-                  <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-6">
-                    <div>
-                      <h3 className="text-2xl font-semibold text-basin-slate mb-2">{position.title}</h3>
-                      <div className="flex flex-wrap gap-4 text-sm text-gray-600">
-                        <div className="flex items-center">
-                          <Users className="h-4 w-4 mr-1" />
-                          {position.department}
-                        </div>
-                        <div className="flex items-center">
-                          <MapPin className="h-4 w-4 mr-1" />
-                          {position.location}
-                        </div>
-                        <div className="flex items-center">
-                          <Clock className="h-4 w-4 mr-1" />
-                          {position.type}
-                        </div>
-                      </div>
-                    </div>
-                    <Link href="/contact">
-                      <Button className="bg-carolina-blue text-navy hover:bg-carolina-blue/90 mt-4 lg:mt-0">
-                        Apply Now
-                      </Button>
-                    </Link>
-                  </div>
-
-                  <p className="text-black mb-6">{position.description}</p>
-
-                  <div>
-                    <h4 className="text-lg font-semibold text-basin-slate mb-3">Key Requirements:</h4>
-                    <ul className="space-y-2">
-                      {position.requirements.map((req, reqIndex) => (
-                        <li key={reqIndex} className="flex items-start">
-                          <svg
-                            className="h-5 w-5 text-carolina-blue mr-2 mt-0.5 flex-shrink-0"
-                            fill="none"
-                            stroke="currentColor"
-                            viewBox="0 0 24 24"
-                          >
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                          </svg>
-                          <span className="text-black">{req}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                </div>
-              ))}
-            </div>
-
-            {/* No suitable position */}
-            <div className="mt-12 text-center">
-              <div className="bg-white rounded-lg p-8 shadow-sm">
-                <h3 className="text-xl font-semibold text-basin-slate mb-4">Don't see a perfect fit?</h3>
-                <p className="text-black mb-6">
-                  We're always looking for talented individuals to join our team. Send us your resume and let us know
-                  how you'd like to contribute to our mission.
-                </p>
-                <Link href="/contact">
+                <Link href="/about">
                   <Button
                     variant="outline"
-                    className="border-carolina-blue text-carolina-blue hover:bg-carolina-blue hover:text-white"
+                    className="bg-transparent border-white text-white hover:bg-white hover:text-navy transition-colors duration-300"
                   >
-                    Send Your Resume
+                    Learn About Us
                   </Button>
                 </Link>
               </div>
@@ -284,7 +86,273 @@ export default function CareersPage() {
           </div>
         </section>
 
-        {/* Benefits Section */}
+        {/* Why Work With Us */}
+        <section className="py-16 bg-white">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl md:text-4xl font-light text-navy mb-4">Why Work With CoPoint Data?</h2>
+              <div className="section-divider"></div>
+              <p className="text-black max-w-3xl mx-auto mt-6">
+                Join a team that's passionate about transforming businesses through AI and data analytics. We offer a
+                collaborative environment where innovation thrives and careers grow.
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+              <div className="text-center">
+                <div className="bg-carolina-blue/20 p-4 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                  <Users className="h-8 w-8 text-basin-slate" />
+                </div>
+                <h3 className="text-xl font-semibold mb-3 text-basin-slate">Collaborative Culture</h3>
+                <p className="text-black">
+                  Work with talented professionals who value teamwork, knowledge sharing, and mutual support.
+                </p>
+              </div>
+
+              <div className="text-center">
+                <div className="bg-carolina-blue/20 p-4 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                  <svg
+                    width="32"
+                    height="32"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="text-basin-slate"
+                  >
+                    <path
+                      d="M12 2L2 7L12 12L22 7L12 2Z"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                    <path
+                      d="M2 17L12 22L22 17"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                    <path
+                      d="M2 12L12 17L22 12"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </div>
+                <h3 className="text-xl font-semibold mb-3 text-basin-slate">Cutting-Edge Projects</h3>
+                <p className="text-black">
+                  Work on innovative AI and data projects that make a real impact on businesses and industries.
+                </p>
+              </div>
+
+              <div className="text-center">
+                <div className="bg-carolina-blue/20 p-4 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                  <svg
+                    width="32"
+                    height="32"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="text-basin-slate"
+                  >
+                    <path
+                      d="M16 4H18C19.1046 4 20 4.89543 20 6V18C20 19.1046 19.1046 20 18 20H6C4.89543 20 4 19.1046 4 18V6C4 4.89543 4.89543 4 6 4H8"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                    <path
+                      d="M15 2H9C8.44772 2 8 2.44772 8 3V5C8 5.55228 8.44772 6 9 6H15C15.5523 6 16 5.55228 16 5V3C16 2.44772 15.5523 2 15 2Z"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                    <path
+                      d="M9 12L11 14L15 10"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </div>
+                <h3 className="text-xl font-semibold mb-3 text-basin-slate">Professional Growth</h3>
+                <p className="text-black">
+                  Continuous learning opportunities, mentorship programs, and clear career advancement paths.
+                </p>
+              </div>
+
+              <div className="text-center">
+                <div className="bg-carolina-blue/20 p-4 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                  <MapPin className="h-8 w-8 text-basin-slate" />
+                </div>
+                <h3 className="text-xl font-semibold mb-3 text-basin-slate">Global Reach</h3>
+                <p className="text-black">
+                  Work with clients worldwide from our offices in Dallas and India, with flexible remote options.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Open Positions */}
+        <section id="open-positions" className="py-16 bg-gray-bg">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-light text-navy mb-4">Open Positions</h2>
+              <div className="section-divider"></div>
+              <p className="text-black max-w-3xl mx-auto mt-6">
+                Explore our current openings and find the perfect role to advance your career in AI and data analytics.
+              </p>
+            </div>
+
+            <div className="max-w-4xl mx-auto space-y-6">
+              {/* Senior Data Scientist */}
+              <div className="bg-white p-6 rounded-lg shadow-sm hover:shadow-lg transition-shadow">
+                <div className="flex flex-col md:flex-row md:items-center md:justify-between">
+                  <div className="flex-1">
+                    <h3 className="text-xl font-semibold text-basin-slate mb-2">Senior Data Scientist</h3>
+                    <div className="flex flex-wrap gap-4 text-sm text-black mb-4">
+                      <div className="flex items-center">
+                        <MapPin className="h-4 w-4 mr-1 text-carolina-blue" />
+                        <span>Dallas, TX / Remote</span>
+                      </div>
+                      <div className="flex items-center">
+                        <Clock className="h-4 w-4 mr-1 text-carolina-blue" />
+                        <span>Full-time</span>
+                      </div>
+                      <div className="flex items-center">
+                        <DollarSign className="h-4 w-4 mr-1 text-carolina-blue" />
+                        <span>$120k - $160k</span>
+                      </div>
+                    </div>
+                    <p className="text-black mb-4">
+                      Lead advanced analytics projects, develop machine learning models, and drive data-driven insights
+                      for enterprise clients. Requires 5+ years experience in data science and expertise in Python, R,
+                      and cloud platforms.
+                    </p>
+                  </div>
+                  <div className="md:ml-6">
+                    <Link href="/contact">
+                      <Button className="bg-navy text-white hover:bg-navy/90 w-full md:w-auto">
+                        Apply Now <ArrowRight className="ml-2 h-4 w-4" />
+                      </Button>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+
+              {/* AI Solutions Architect */}
+              <div className="bg-white p-6 rounded-lg shadow-sm hover:shadow-lg transition-shadow">
+                <div className="flex flex-col md:flex-row md:items-center md:justify-between">
+                  <div className="flex-1">
+                    <h3 className="text-xl font-semibold text-basin-slate mb-2">AI Solutions Architect</h3>
+                    <div className="flex flex-wrap gap-4 text-sm text-black mb-4">
+                      <div className="flex items-center">
+                        <MapPin className="h-4 w-4 mr-1 text-carolina-blue" />
+                        <span>Dallas, TX / Gurugram, India</span>
+                      </div>
+                      <div className="flex items-center">
+                        <Clock className="h-4 w-4 mr-1 text-carolina-blue" />
+                        <span>Full-time</span>
+                      </div>
+                      <div className="flex items-center">
+                        <DollarSign className="h-4 w-4 mr-1 text-carolina-blue" />
+                        <span>$140k - $180k</span>
+                      </div>
+                    </div>
+                    <p className="text-black mb-4">
+                      Design and implement AI solutions for enterprise clients. Lead technical architecture decisions,
+                      mentor junior developers, and drive innovation in AI implementations. Requires 7+ years in AI/ML
+                      and solution architecture.
+                    </p>
+                  </div>
+                  <div className="md:ml-6">
+                    <Link href="/contact">
+                      <Button className="bg-navy text-white hover:bg-navy/90 w-full md:w-auto">
+                        Apply Now <ArrowRight className="ml-2 h-4 w-4" />
+                      </Button>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+
+              {/* Business Intelligence Consultant */}
+              <div className="bg-white p-6 rounded-lg shadow-sm hover:shadow-lg transition-shadow">
+                <div className="flex flex-col md:flex-row md:items-center md:justify-between">
+                  <div className="flex-1">
+                    <h3 className="text-xl font-semibold text-basin-slate mb-2">Business Intelligence Consultant</h3>
+                    <div className="flex flex-wrap gap-4 text-sm text-black mb-4">
+                      <div className="flex items-center">
+                        <MapPin className="h-4 w-4 mr-1 text-carolina-blue" />
+                        <span>Remote / Travel Required</span>
+                      </div>
+                      <div className="flex items-center">
+                        <Clock className="h-4 w-4 mr-1 text-carolina-blue" />
+                        <span>Full-time</span>
+                      </div>
+                      <div className="flex items-center">
+                        <DollarSign className="h-4 w-4 mr-1 text-carolina-blue" />
+                        <span>$90k - $130k</span>
+                      </div>
+                    </div>
+                    <p className="text-black mb-4">
+                      Work directly with clients to implement BI solutions, create dashboards, and drive data-driven
+                      decision making. Requires experience with Power BI, Tableau, and data visualization best
+                      practices.
+                    </p>
+                  </div>
+                  <div className="md:ml-6">
+                    <Link href="/contact">
+                      <Button className="bg-navy text-white hover:bg-navy/90 w-full md:w-auto">
+                        Apply Now <ArrowRight className="ml-2 h-4 w-4" />
+                      </Button>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+
+              {/* Placeholder positions */}
+              <div className="bg-white p-6 rounded-lg shadow-sm opacity-60">
+                <div className="flex flex-col md:flex-row md:items-center md:justify-between">
+                  <div className="flex-1">
+                    <h3 className="text-xl font-semibold text-basin-slate mb-2">Cloud Data Engineer</h3>
+                    <div className="flex flex-wrap gap-4 text-sm text-black mb-4">
+                      <div className="flex items-center">
+                        <MapPin className="h-4 w-4 mr-1 text-carolina-blue" />
+                        <span>Gurugram, India / Remote</span>
+                      </div>
+                      <div className="flex items-center">
+                        <Clock className="h-4 w-4 mr-1 text-carolina-blue" />
+                        <span>Full-time</span>
+                      </div>
+                      <div className="flex items-center">
+                        <DollarSign className="h-4 w-4 mr-1 text-carolina-blue" />
+                        <span>Competitive</span>
+                      </div>
+                    </div>
+                    <p className="text-black mb-4">
+                      Position opening soon. Build and maintain cloud data infrastructure, implement ETL pipelines, and
+                      optimize data workflows for enterprise clients.
+                    </p>
+                  </div>
+                  <div className="md:ml-6">
+                    <Button disabled className="w-full md:w-auto">
+                      Coming Soon
+                    </Button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Benefits */}
         <section className="py-16 bg-white">
           <div className="container mx-auto px-4">
             <div className="text-center mb-12">
@@ -292,90 +360,32 @@ export default function CareersPage() {
               <div className="section-divider"></div>
             </div>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-              <div className="text-center p-6">
-                <div className="bg-carolina-blue/20 p-4 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                  <DollarSign className="h-8 w-8 text-basin-slate" />
-                </div>
-                <h3 className="text-lg font-semibold mb-3 text-basin-slate">Competitive Compensation</h3>
-                <p className="text-black">
-                  Market-leading salaries with performance-based bonuses and equity opportunities.
-                </p>
-              </div>
-
-              <div className="text-center p-6">
-                <div className="bg-carolina-blue/20 p-4 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                  <svg className="h-8 w-8 text-basin-slate" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
-                    />
-                  </svg>
-                </div>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+              <div className="text-center">
                 <h3 className="text-lg font-semibold mb-3 text-basin-slate">Health & Wellness</h3>
                 <p className="text-black">Comprehensive health insurance, dental, vision, and wellness programs.</p>
               </div>
-
-              <div className="text-center p-6">
-                <div className="bg-carolina-blue/20 p-4 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                  <svg className="h-8 w-8 text-basin-slate" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                    />
-                  </svg>
-                </div>
-                <h3 className="text-lg font-semibold mb-3 text-basin-slate">Flexible Schedule</h3>
-                <p className="text-black">Work-life balance with flexible hours and remote work options.</p>
+              <div className="text-center">
+                <h3 className="text-lg font-semibold mb-3 text-basin-slate">Flexible Work</h3>
+                <p className="text-black">Remote work options, flexible hours, and work-life balance support.</p>
               </div>
-
-              <div className="text-center p-6">
-                <div className="bg-carolina-blue/20 p-4 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                  <svg className="h-8 w-8 text-basin-slate" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
-                    />
-                  </svg>
-                </div>
-                <h3 className="text-lg font-semibold mb-3 text-basin-slate">Professional Development</h3>
+              <div className="text-center">
+                <h3 className="text-lg font-semibold mb-3 text-basin-slate">Learning & Development</h3>
                 <p className="text-black">Training budget, conference attendance, and certification support.</p>
               </div>
-
-              <div className="text-center p-6">
-                <div className="bg-carolina-blue/20 p-4 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                  <svg className="h-8 w-8 text-basin-slate" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9v-9m0-9v9"
-                    />
-                  </svg>
-                </div>
-                <h3 className="text-lg font-semibold mb-3 text-basin-slate">Global Opportunities</h3>
-                <p className="text-black">Work with international teams and clients across different time zones.</p>
+              <div className="text-center">
+                <h3 className="text-lg font-semibold mb-3 text-basin-slate">Competitive Compensation</h3>
+                <p className="text-black">Market-competitive salaries, performance bonuses, and equity options.</p>
               </div>
-
-              <div className="text-center p-6">
-                <div className="bg-carolina-blue/20 p-4 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                  <svg className="h-8 w-8 text-basin-slate" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
-                    />
-                  </svg>
-                </div>
-                <h3 className="text-lg font-semibold mb-3 text-basin-slate">Team Events</h3>
-                <p className="text-black">Regular team building activities, company retreats, and social events.</p>
+              <div className="text-center">
+                <h3 className="text-lg font-semibold mb-3 text-basin-slate">Time Off</h3>
+                <p className="text-black">
+                  Generous PTO, holidays, and sabbatical opportunities for long-term employees.
+                </p>
+              </div>
+              <div className="text-center">
+                <h3 className="text-lg font-semibold mb-3 text-basin-slate">Global Opportunities</h3>
+                <p className="text-black">Work with international teams and opportunities for global assignments.</p>
               </div>
             </div>
           </div>
@@ -386,15 +396,19 @@ export default function CareersPage() {
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-3xl md:text-4xl font-light mb-4 text-navy">Ready to Join Our Team?</h2>
             <p className="text-black mb-8 max-w-2xl mx-auto">
-              Take the next step in your career and help us transform businesses through AI and data analytics.
+              Don't see the perfect role? We're always looking for talented individuals who share our passion for AI and
+              data analytics.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/contact">
-                <Button className="bg-white text-navy hover:bg-white/90">Apply Now</Button>
+                <Button className="bg-white text-navy hover:bg-white/90">Send Us Your Resume</Button>
               </Link>
               <Link href="/about">
-                <Button variant="outline" className="bg-transparent border-navy text-navy hover:bg-carolina-blue/90">
-                  Learn About Our Team
+                <Button
+                  variant="outline"
+                  className="bg-transparent border-navy text-navy hover:bg-navy hover:text-white"
+                >
+                  Learn More About Us
                 </Button>
               </Link>
             </div>
