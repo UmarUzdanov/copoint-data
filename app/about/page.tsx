@@ -41,14 +41,6 @@ export default function AboutPage() {
               Contact
             </Link>
           </nav>
-          <Link href="/contact">
-            <Button
-              className="hidden md:flex bg-carolina-blue text-navy hover:bg-navy hover:text-white transition-colors duration-300"
-              aria-label="Get Started"
-            >
-              Get Started
-            </Button>
-          </Link>
           <Button variant="ghost" size="icon" className="md:hidden">
             <svg
               xmlns="http://www.w3.org/2000/svg"
