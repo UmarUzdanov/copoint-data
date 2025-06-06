@@ -20,7 +20,7 @@ export const teamMembers: TeamMember[] = [
     
     Mr. Humphrey holds a B.A. in Economics and a B.B.A. in Finance from Southern Methodist University, as well as an M.B.A. from The Cox School of Business at SMU, where he currently serves on the Advisory Board. When not revolutionizing how businesses use data insights, John enjoys hunting in Arkansas, and walking the Katy Trail.`,
     image: "/team/John.jpeg",
-    linkedin: "https://www.linkedin.com/in/jphumphrey/"
+    linkedin: "https://www.linkedin.com/in/jphumphrey/",
   },
   {
     name: "Dipesh Patel",
@@ -31,7 +31,7 @@ export const teamMembers: TeamMember[] = [
     
     What sets Dipesh apart is his rare ability to unite high-level strategy with practical implementation. Whether orchestrating large-scale digital transformations or optimizing mission-critical business processes, he ensures every technological investment drives meaningful business outcomes. This bridges-and-builds philosophy has made him an invaluable partner to organizations navigating today's rapidly evolving digital landscape. Dipesh received a business degree in Management Information Systems from the McCombs school of business at the University of Texas at Austin.`,
     image: "/team/CURRENT_Patel_Dipesh_Big_Ben.jpg",
-    linkedin: "https://www.linkedin.com/in/dipeshkpatel/"
+    linkedin: "https://www.linkedin.com/in/dipeshkpatel/",
   },
   {
     name: "Robert Greiner",
@@ -44,7 +44,20 @@ export const teamMembers: TeamMember[] = [
     
     Robert holds an M.S. in Computer Science from Southern Methodist University. Outside of work, he is an avid runner and board game enthusiast. He lives in Dallas with his wife, Diana, and their children, Amelia and Noah.`,
     image: "/team/Robert Greiner.png",
-    linkedin: "https://www.linkedin.com/in/robertgreiner/"
+    linkedin: "https://www.linkedin.com/in/robertgreiner/",
+  },
+  {
+    name: "Justin Shannon",
+    role: "Senior Vice President",
+    bio: `Justin Shannon brings extensive experience in enterprise technology solutions and strategic consulting to CoPoint Data. With a proven track record of leading complex digital transformation initiatives, Justin specializes in helping organizations navigate the intersection of business strategy and emerging technologies.
+
+    Throughout his career, Justin has demonstrated exceptional ability to translate business requirements into scalable technology solutions. His expertise spans cloud architecture, data platform design, and AI implementation strategies, making him instrumental in driving successful outcomes for enterprise clients.
+    
+    Justin's collaborative leadership style and deep technical knowledge enable him to bridge the gap between executive vision and technical execution. He is passionate about leveraging data and AI to create competitive advantages and drive sustainable business growth.
+    
+    When not working on transformative technology projects, Justin enjoys outdoor activities and spending time with his family.`,
+    image: "/placeholder.svg?height=400&width=400",
+    linkedin: "https://www.linkedin.com/in/justinshannon/",
   },
   {
     name: "Saurabh Singh Teotia",
@@ -61,7 +74,7 @@ export const teamMembers: TeamMember[] = [
     
     Passionate about leveraging data as a strategic asset, Saurabh is committed to supporting AI/ML initiatives and cloud engineering projects, ensuring seamless data integration and optimal enterprise reporting. His vision includes driving innovation, fostering a data-driven culture, and contributing to the success of organizations through advanced data solutions.`,
     image: "/team/Saurabh Photo.jpg",
-    linkedin: "https://www.linkedin.com/in/saurabh-singh-t-a088b8b6/"
+    linkedin: "https://www.linkedin.com/in/saurabh-singh-t-a088b8b6/",
   },
   {
     name: "Neeraj Shridhar",
@@ -72,7 +85,29 @@ export const teamMembers: TeamMember[] = [
     
     Drawing from his deep expertise in L&D, Neeraj has mastered the full spectrum of learning interventions - from needs assessment and curriculum design to program delivery and impact measurement. His approach to talent development integrates cutting-edge learning methodologies with strategic HR practices, including performance management systems, competency frameworks, and succession planning. He has successfully implemented these initiatives across diverse sectors, creating sustainable learning ecosystems that foster employee growth and organizational excellence. His consultancy role with various organizations demonstrates his thought leadership in contemporary HR practices and learning technologies, establishing him as a trusted authority in organizational development and talent management.`,
     image: "/team/neeraaj.jpeg",
-    linkedin: "https://www.linkedin.com/in/connectforlife/"
+    linkedin: "https://www.linkedin.com/in/connectforlife/",
+  },
+  {
+    name: "Justin Finch",
+    role: "Director of Operations",
+    bio: `Justin Finch brings operational excellence and strategic leadership to CoPoint Data's growing portfolio of AI and data initiatives. With extensive experience in managing complex technology projects and driving operational efficiency, Justin ensures that our delivery teams consistently exceed client expectations.
+
+    His background spans project management, process optimization, and team leadership across multiple industries. Justin's systematic approach to operations management and his ability to scale processes while maintaining quality standards make him instrumental in CoPoint Data's continued growth and success.
+    
+    Justin is passionate about creating efficient workflows that enable our technical teams to focus on innovation while ensuring seamless project delivery. His collaborative approach and attention to detail help bridge the gap between strategic vision and tactical execution.`,
+    image: "/placeholder.svg?height=400&width=400",
+    linkedin: "https://www.linkedin.com/in/justinfinch/",
+  },
+  {
+    name: "Frank de los Reyes",
+    role: "Senior Director of Technology",
+    bio: `Frank de los Reyes is a seasoned technology leader with deep expertise in enterprise architecture and cloud solutions. At CoPoint Data, Frank drives the technical vision and ensures our solutions leverage the latest advancements in AI, data platforms, and cloud technologies.
+
+    With a strong background in Microsoft technologies and cloud architecture, Frank leads our technical teams in designing and implementing scalable, secure, and innovative solutions for enterprise clients. His expertise spans the full technology stack, from data infrastructure to AI model deployment.
+    
+    Frank's leadership philosophy centers on empowering teams to deliver exceptional technical solutions while maintaining the highest standards of quality and security. He is committed to staying at the forefront of emerging technologies and ensuring CoPoint Data remains a leader in the AI and data consulting space.`,
+    image: "/placeholder.svg?height=400&width=400",
+    linkedin: "https://www.linkedin.com/in/frankdelosreyes/",
   },
   {
     name: "Reva Bhatia",
@@ -83,9 +118,8 @@ export const teamMembers: TeamMember[] = [
     
     Proven ability to collaborate with global teams and senior leaders to translate complex business challenges into actionable, data-driven strategies that deliver impactful outcomes. She has strong experience in project management, including scope planning, budgeting, resource management (across geographies), project execution and risk management. She managed the team of professionals to build internal tools and deliver client service.`,
     image: "/team/Reva Maheshwari Bhatia.jpg",
-    linkedin: "https://www.linkedin.com/in/connectforlife/"
-
-  }
+    linkedin: "https://www.linkedin.com/in/connectforlife/",
+  },
 ]
 
 export function getTeamMembers() {

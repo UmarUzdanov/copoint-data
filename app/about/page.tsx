@@ -7,9 +7,11 @@ import { getTeamMembers } from "@/lib/team"
 export default function AboutPage() {
   const teamMembers = getTeamMembers()
   const executiveTeam = teamMembers.filter((member) =>
-    ["John P Humphrey Jr.", "Dipesh Patel", "Robert Greiner", "Neeraj Shridhar"].includes(member.name),
+    ["John P Humphrey Jr.", "Dipesh Patel", "Robert Greiner", "Justin Shannon"].includes(member.name),
   )
-  const leadershipTeam = teamMembers.filter((member) => member.name === "Saurabh Singh Teotia")
+  const leadershipTeam = teamMembers.filter((member) =>
+    ["Saurabh Singh Teotia", "Neeraj Shridhar", "Justin Finch", "Frank de los Reyes"].includes(member.name),
+  )
 
   return (
     <div className="flex flex-col min-h-screen">
@@ -266,7 +268,7 @@ export default function AboutPage() {
             <h2 className="text-3xl md:text-4xl font-light mb-12 text-navy text-center">Leadership Team</h2>
             <div className="section-divider"></div>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
               {leadershipTeam.map((member, index) => (
                 <div
                   key={index}

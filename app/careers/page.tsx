@@ -425,11 +425,7 @@ export default function CareersPage() {
               </div>
               <p className="text-black mb-4">All AI, All Data, All of the Time</p>
               <div className="flex space-x-4">
-                <Link
-                  href="#"
-                  className="text-navy hover:text-carolina-blue transition-transform duration-300 hover:scale-110"
-                  aria-label="Facebook"
-                >
+                <Link href="#" className="text-navy hover:text-carolina-blue">
                   <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                     <path
                       fillRule="evenodd"
@@ -438,20 +434,12 @@ export default function CareersPage() {
                     />
                   </svg>
                 </Link>
-                <Link
-                  href="#"
-                  className="text-navy hover:text-carolina-blue transition-transform duration-300 hover:scale-110"
-                  aria-label="Twitter"
-                >
+                <Link href="#" className="text-navy hover:text-carolina-blue">
                   <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                    <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
+                    <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 712.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
                   </svg>
                 </Link>
-                <Link
-                  href="#"
-                  className="text-navy hover:text-carolina-blue transition-transform duration-300 hover:scale-110"
-                  aria-label="Instagram"
-                >
+                <Link href="#" className="text-navy hover:text-carolina-blue">
                   <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                     <path
                       fillRule="evenodd"
@@ -460,11 +448,7 @@ export default function CareersPage() {
                     />
                   </svg>
                 </Link>
-                <Link
-                  href="#"
-                  className="text-navy hover:text-carolina-blue transition-transform duration-300 hover:scale-110"
-                  aria-label="LinkedIn"
-                >
+                <Link href="#" className="text-navy hover:text-carolina-blue">
                   <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                     <path
                       fillRule="evenodd"
@@ -482,26 +466,17 @@ export default function CareersPage() {
               </h3>
               <ul className="space-y-2">
                 <li>
-                  <Link
-                    href="/services"
-                    className="nav-link hover:text-carolina-blue hover:translate-x-1 inline-block transition-all duration-200"
-                  >
+                  <Link href="/services" className="nav-link">
                     AI
                   </Link>
                 </li>
                 <li>
-                  <Link
-                    href="/services"
-                    className="nav-link hover:text-carolina-blue hover:translate-x-1 inline-block transition-all duration-200"
-                  >
+                  <Link href="/services" className="nav-link">
                     Data
                   </Link>
                 </li>
                 <li>
-                  <Link
-                    href="/services"
-                    className="nav-link hover:text-carolina-blue hover:translate-x-1 inline-block transition-all duration-200"
-                  >
+                  <Link href="/services" className="nav-link">
                     Support
                   </Link>
                 </li>
@@ -514,42 +489,27 @@ export default function CareersPage() {
               </h3>
               <ul className="space-y-2">
                 <li>
-                  <Link
-                    href="/about"
-                    className="nav-link hover:text-carolina-blue hover:translate-x-1 inline-block transition-all duration-200"
-                  >
+                  <Link href="/about" className="nav-link">
                     About Us
                   </Link>
                 </li>
                 <li>
-                  <Link
-                    href="/team"
-                    className="nav-link hover:text-carolina-blue hover:translate-x-1 inline-block transition-all duration-200"
-                  >
+                  <Link href="/team" className="nav-link">
                     Our Team
                   </Link>
                 </li>
                 <li>
-                  <Link
-                    href="/careers"
-                    className="nav-link hover:text-carolina-blue hover:translate-x-1 inline-block transition-all duration-200"
-                  >
+                  <Link href="/careers" className="nav-link">
                     Careers
                   </Link>
                 </li>
                 <li>
-                  <Link
-                    href="/blog"
-                    className="nav-link hover:text-carolina-blue hover:translate-x-1 inline-block transition-all duration-200"
-                  >
+                  <Link href="/blog" className="nav-link">
                     Blog
                   </Link>
                 </li>
                 <li>
-                  <Link
-                    href="/contact"
-                    className="nav-link hover:text-carolina-blue hover:translate-x-1 inline-block transition-all duration-200"
-                  >
+                  <Link href="/contact" className="nav-link">
                     Contact
                   </Link>
                 </li>
@@ -571,18 +531,12 @@ export default function CareersPage() {
                 <p className="mb-4">Gurugram, Haryana 122022</p>
 
                 <p className="mb-2">
-                  <Link
-                    href="mailto:info@copointdata.com"
-                    className="nav-link hover:text-carolina-blue transition-colors duration-200"
-                  >
+                  <Link href="mailto:info@copointdata.com" className="nav-link">
                     info@copointdata.com
                   </Link>
                 </p>
                 <p>
-                  <Link
-                    href="tel:+12065551234"
-                    className="nav-link hover:text-carolina-blue transition-colors duration-200"
-                  >
+                  <Link href="tel:+12065551234" className="nav-link">
                     (206) 555-1234
                   </Link>
                 </p>
@@ -592,22 +546,13 @@ export default function CareersPage() {
           <div className="border-t border-gray-200 mt-12 pt-8 text-center text-black">
             <p>&copy; {new Date().getFullYear()} CoPoint Data. All rights reserved.</p>
             <div className="flex justify-center mt-4 space-x-4">
-              <Link
-                href="#"
-                className="nav-link hover:text-carolina-blue hover:underline transition-colors duration-200"
-              >
+              <Link href="#" className="nav-link">
                 Privacy Policy
               </Link>
-              <Link
-                href="#"
-                className="nav-link hover:text-carolina-blue hover:underline transition-colors duration-200"
-              >
+              <Link href="#" className="nav-link">
                 Terms of Service
               </Link>
-              <Link
-                href="#"
-                className="nav-link hover:text-carolina-blue hover:underline transition-colors duration-200"
-              >
+              <Link href="#" className="nav-link">
                 Sitemap
               </Link>
             </div>

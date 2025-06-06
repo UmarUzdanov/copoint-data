@@ -21,45 +21,41 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
         <div className="container flex h-16 items-center justify-between">
           <div className="flex items-center gap-2">
             <Link href="/" className="flex items-center">
-              <Image
-                  src="/CoPoint.svg"
-                  alt="CoPoint Data Logo"
-                  width={60}
-                  height={20}
-                  priority
-              />
+              <Image src="/CoPoint.svg" alt="CoPoint Data Logo" width={60} height={20} priority />
             </Link>
           </div>
           <nav className="hidden md:flex gap-6">
-            <Link href="/" className="nav-link active">
+            <Link href="/" className="nav-link">
               Home
             </Link>
             <Link href="/services" className="nav-link">
               Services
             </Link>
-            <Link href="/blog" className="nav-link">
+            <Link href="/blog" className="nav-link active">
               Blog
             </Link>
             <Link href="/about" className="nav-link">
               About
             </Link>
+            <Link href="/careers" className="nav-link">
+              Careers
+            </Link>
             <Link href="/contact" className="nav-link">
               Contact
             </Link>
           </nav>
-          <Button className="hidden md:flex bg-carolina-blue text-navy hover:bg-carolina-blue/90">Get Started</Button>
           <Button variant="ghost" size="icon" className="md:hidden">
             <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="h-6 w-6"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="h-6 w-6"
             >
               <line x1="4" x2="20" y1="12" y2="12" />
               <line x1="4" x2="20" y1="6" y2="6" />
@@ -219,17 +215,11 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
           <div className="grid md:grid-cols-4 gap-8">
             <div>
               <div className="mb-4">
-                <Image
-                  src="/CoPoint.svg"
-                  alt="CoPoint Data Logo"
-                  width={120}
-                  height={40}
-                  priority
-                />
+                <Image src="/CoPoint.svg" alt="CoPoint Data Logo" width={120} height={40} priority />
               </div>
-              <p className="text-black mb-4">All Data, All Microsoft, All of the Time</p>
+              <p className="text-black mb-4">All AI, All Data, All of the Time</p>
               <div className="flex space-x-4">
-                <a href="#" className="text-navy hover:text-carolina-blue">
+                <Link href="#" className="text-navy hover:text-carolina-blue">
                   <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                     <path
                       fillRule="evenodd"
@@ -237,13 +227,13 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
                       clipRule="evenodd"
                     />
                   </svg>
-                </a>
-                <a href="#" className="text-navy hover:text-carolina-blue">
+                </Link>
+                <Link href="#" className="text-navy hover:text-carolina-blue">
                   <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                     <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
                   </svg>
-                </a>
-                <a href="#" className="text-navy hover:text-carolina-blue">
+                </Link>
+                <Link href="#" className="text-navy hover:text-carolina-blue">
                   <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                     <path
                       fillRule="evenodd"
@@ -251,8 +241,8 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
                       clipRule="evenodd"
                     />
                   </svg>
-                </a>
-                <a href="#" className="text-navy hover:text-carolina-blue">
+                </Link>
+                <Link href="#" className="text-navy hover:text-carolina-blue">
                   <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                     <path
                       fillRule="evenodd"
@@ -260,7 +250,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
                       clipRule="evenodd"
                     />
                   </svg>
-                </a>
+                </Link>
               </div>
             </div>
             <div>
@@ -270,29 +260,19 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
               </h3>
               <ul className="space-y-2">
                 <li>
-                  <a href="#" className="nav-link">
-                    Data Management
-                  </a>
+                  <Link href="/services" className="nav-link">
+                    AI
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" className="nav-link">
-                    AI Solutions
-                  </a>
+                  <Link href="/services" className="nav-link">
+                    Data
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" className="nav-link">
-                    Business Intelligence
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="nav-link">
-                    Cloud Solutions
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="nav-link">
-                    Data Strategy
-                  </a>
+                  <Link href="/services" className="nav-link">
+                    Support
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -303,29 +283,29 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
               </h3>
               <ul className="space-y-2">
                 <li>
-                  <a href="#" className="nav-link">
+                  <Link href="/about" className="nav-link">
                     About Us
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" className="nav-link">
+                  <Link href="/team" className="nav-link">
                     Our Team
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" className="nav-link">
+                  <Link href="/careers" className="nav-link">
                     Careers
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" className="nav-link">
+                  <Link href="/blog" className="nav-link">
                     Blog
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" className="nav-link">
+                  <Link href="/contact" className="nav-link">
                     Contact
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -335,18 +315,24 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
                 <div className="w-16 h-0.5 bg-carolina-blue mt-2"></div>
               </h3>
               <address className="not-italic text-black">
-                <p className="mb-2">123 Data Street</p>
-                <p className="mb-2">Seattle, WA 98101</p>
-                <p className="mb-2">United States</p>
+                <p className="mb-4 font-semibold">CoPoint Data Global HQ</p>
+                <p className="mb-2">5646 Milton St. Suite 231</p>
+                <p className="mb-4">Dallas, TX 75206</p>
+
+                <p className="mb-2 font-semibold">CoPoint Data India</p>
+                <p className="mb-2">1st Floor, Unitech Trade Center</p>
+                <p className="mb-2">Sushant Lok Phase 1, Sector 43</p>
+                <p className="mb-4">Gurugram, Haryana 122022</p>
+
                 <p className="mb-2">
-                  <a href="mailto:info@copointdata.com" className="nav-link">
+                  <Link href="mailto:info@copointdata.com" className="nav-link">
                     info@copointdata.com
-                  </a>
+                  </Link>
                 </p>
                 <p>
-                  <a href="tel:+12065551234" className="nav-link">
+                  <Link href="tel:+12065551234" className="nav-link">
                     (206) 555-1234
-                  </a>
+                  </Link>
                 </p>
               </address>
             </div>
@@ -354,15 +340,15 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
           <div className="border-t border-gray-200 mt-12 pt-8 text-center text-black">
             <p>&copy; {new Date().getFullYear()} CoPoint Data. All rights reserved.</p>
             <div className="flex justify-center mt-4 space-x-4">
-              <a href="#" className="nav-link">
+              <Link href="#" className="nav-link">
                 Privacy Policy
-              </a>
-              <a href="#" className="nav-link">
+              </Link>
+              <Link href="#" className="nav-link">
                 Terms of Service
-              </a>
-              <a href="#" className="nav-link">
+              </Link>
+              <Link href="#" className="nav-link">
                 Sitemap
-              </a>
+              </Link>
             </div>
           </div>
         </div>
